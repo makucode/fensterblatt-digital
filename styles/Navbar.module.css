@@ -1,0 +1,28 @@
+.Navbar {
+    width: calc(100vw - 40vw);
+    height: 80px;
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    padding: 1rem 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navbar img {
+    object-fit: contain;
+    height: 70px;
+}
+
+.NavbarLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.NavbarLinks a {
+    font-family: "ClashDisplay";
+    color: black;
+}

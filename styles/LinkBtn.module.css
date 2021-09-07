@@ -1,0 +1,25 @@
+.bold,
+.thin {
+    cursor: pointer;
+}
+
+.bold {
+    color: #ffffff;
+    padding: 1.25rem;
+    background: rgb(0, 70, 67);
+    background: linear-gradient(
+        145deg,
+        rgba(0, 70, 67, 1) 0%,
+        rgba(83, 221, 108, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 7px;
+    font-size: 1.25rem;
+}
+
+.bold > svg {
+    fill: #ffffff;
+    margin-right: 1rem;
+}
