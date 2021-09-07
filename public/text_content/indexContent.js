@@ -1,3 +1,6 @@
+import leistungenIcon from "../imgs/leistungen_marketing.svg";
+import projektVonBerg from "../imgs/projekt_mediation_vonberg.png";
+
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
     text1: "Wir bieten digitale Lösungen für Selbstständige, Kleinunternehmer sowie mittelständische Unternehmen.", //CHECK
@@ -18,6 +21,8 @@ export const leistungen = {
     text1: "Landing-Page, Online-Shop oder Wordpress-Blog, wir entwickeln Ihnen die passende digitale Lösung.", //CHECK
     text2: "Falls Sie für Ihr Unternehmen ein neues Erscheinungsbild inklusive Logo, Visitenkarten und Fotos brauchen, sind Sie hier richtig.",
     text3: "Wir sorgen dafür, dass Ihre Seite bei Google auftaucht und kümmern uns auch gerne um Ihre Social Media Präsenz.", //CHECK
+    img1: leistungenIcon,
+    alt1: "Marketing Illustration", //INSERT!!!
     linkText1: "Mehr zu unseren Leistungen",
 };
 
@@ -28,12 +33,18 @@ export const projekte = {
         {
             heading: "Mediation von Berg",
             tags: ["Webdevelopment", "Webdesign", "Fotografie", "Branding"],
-            img: "URL",
+            img: projektVonBerg,
+            alt: "", //INSERT!!!
+            align: "left",
+            href: "/projekte/mediation-vonberg",
         },
         {
             heading: "Meta-objects",
             tags: ["Webdesign", "Fotografie", "Branding"],
-            img: "URL",
+            img: projektVonBerg,
+            alt: "", //INSERT!!!
+            align: "right",
+            href: "/projekte/meta-objects",
         },
     ],
 };
@@ -46,17 +57,17 @@ export const faq = {
             text1: "Hm das können wir leider nicht beantworten",
         },
         {
-            heading: "Wie lange dauert das??",
+            heading: "Wie lange dauert das?",
             text1: "Hm das können wir leider nicht beantworten",
         },
         {
             heading: "Wer ist dieser Maxi?",
-            text1: "Das beantworten wir ihnen gern bei einem persönlichen Gespräch",
+            text1: "Das beantworten wir ihnen gern bei einem persönlichen Gespräch!",
         },
     ],
 };
 
-export const kontak = {
+export const kontakt = {
     heading: "Interessiert?",
     subHeading1: "Schreiben sie uns",
     linkText1: "Zum Kontaktformular",

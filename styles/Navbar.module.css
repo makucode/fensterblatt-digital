@@ -1,5 +1,5 @@
 .Navbar {
-    width: calc(100vw - 40vw);
+    width: calc(100% - 40vw);
     height: 80px;
     background-color: #f8f8f8;
     position: fixed;
@@ -8,6 +8,9 @@
     padding: 1rem 20vw;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    transition: all ease-in-out 0.3s;
+    transform: translateY(0);
 }
 
 .Navbar img {
@@ -25,4 +28,8 @@
 .NavbarLinks a {
     font-family: "ClashDisplay";
     color: black;
+}
+
+.Hidden {
+    transform: translateY(-100%);
 }

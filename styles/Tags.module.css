@@ -1,0 +1,15 @@
+.Tags {
+    display: flex;
+    flex-wrap: wrap;
+    color: #636363;
+    margin-top: 0.75rem;
+}
+
+.Tags li {
+    border: solid 1px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 0.75rem;
+}

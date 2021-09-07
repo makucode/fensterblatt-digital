@@ -102,6 +102,11 @@ h6 {
     margin: 0;
 }
 
+h3 {
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
 p {
     padding: 0;
     margin: 0;
@@ -128,4 +133,48 @@ li {
 
 .page-wrapper {
     padding: 1rem 20vw; /* seperate for content, navbar and footer */
+}
+
+/* LINKS */
+
+.bold,
+.thin {
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.bold svg,
+.thin svg {
+    margin-right: 1rem;
+}
+
+.bold {
+    color: #ffffff;
+    padding: 1.25rem;
+    background: rgb(0, 70, 67);
+    background: linear-gradient(
+        145deg,
+        rgba(0, 70, 67, 1) 0%,
+        rgba(83, 221, 108, 1) 100%
+    );
+    border-radius: 7px;
+}
+
+.bold > svg {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+.thin {
+    color: #000000;
+    margin-top: 1.5rem;
+}
+
+.thin > svg {
+    fill: transparent;
+    stroke: #000000;
 }

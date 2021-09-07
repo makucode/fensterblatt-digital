@@ -1,0 +1,19 @@
+<svg id="Gruppe_56" data-name="Gruppe 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162.825" height="162.958" viewBox="0 0 162.825 162.958">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.899" y1="0.899" x2="0.225" y2="0.225" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a53568"/>
+      <stop offset="0.998" stop-color="#ff5233"/>
+      <stop offset="1" stop-color="#ff5739"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.26" y1="0.26" x2="1.06" y2="1.06" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#004643"/>
+      <stop offset="1" stop-color="#53dd6c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.084" y1="-0.084" x2="1.051" y2="1.051" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <path id="Pfad_21" data-name="Pfad 21" d="M1528.984,1565.207v60.769a5.527,5.527,0,0,1-5.527,5.527h-60.769a5.535,5.535,0,0,0-5.512,5.991,72.055,72.055,0,1,0,77.8-77.8A5.535,5.535,0,0,0,1528.984,1565.207Z" transform="translate(-1448.046 -1548.581)" fill="url(#linear-gradient)"/>
+  <path id="Pfad_22" data-name="Pfad 22" d="M1508.95,1545.656a72.071,72.071,0,0,0-65.812,65.812,5.522,5.522,0,0,0,5.489,6h60.812a5.506,5.506,0,0,0,5.506-5.506v-60.812A5.522,5.522,0,0,0,1508.95,1545.656Z" transform="translate(-1443.118 -1543.654)" fill="url(#linear-gradient-2)"/>
+  <rect id="Rechteck_166" data-name="Rechteck 166" width="48.21" height="48.21" rx="7.05" transform="translate(114.615)" fill="url(#linear-gradient-3)"/>
+  <rect id="Rechteck_167" data-name="Rechteck 167" width="48.21" height="48.21" rx="7.05" transform="translate(114.615 57.374)" fill="url(#linear-gradient-3)"/>
+  <rect id="Rechteck_168" data-name="Rechteck 168" width="48.21" height="48.21" rx="7.05" transform="translate(114.615 114.748)" fill="url(#linear-gradient-3)"/>
+</svg>

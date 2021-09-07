@@ -1,0 +1,29 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40vw);
+    height: 80px;
+    padding: 2rem 20vw;
+    background-color: #eeeeee;
+}
+
+.FooterLeft {
+    display: flex;
+    color: #000000;
+}
+
+.FooterLeft p {
+    color: #000000;
+    margin-right: 4rem;
+}
+
+.FooterLeft a {
+    color: #000000;
+    font-size: 1.25rem;
+    margin-right: 4rem;
+}
+
+.FooterRight {
+    width: 220px;
+}

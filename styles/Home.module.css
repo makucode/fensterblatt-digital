@@ -1,4 +1,6 @@
-.indexContent {
+.indexContent h2 {
+    font-size: 5rem;
+    font-weight: 300;
 }
 
 .indexHero {
@@ -13,5 +15,51 @@
 .headingHeroSub {
     width: 40%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* ABOUT */
+
+.indexAbout {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 22vh;
+}
+
+.indexAboutLeft {
+    width: 25%;
+}
+
+.indexAbout p {
+    width: 66%;
+}
+
+/* LEISTUNGEN */
+
+.LeistungenItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9vh;
+}
+
+/* PROJEKTE */
+
+/* FAQ */
+
+.indexFaqItems {
+    margin-top: 1.5rem;
+}
+
+/* KONTAKT */
+
+.indexKontakt {
+    margin-bottom: 20vh;
+}
+
+.kontaktMail {
+    display: block;
+    color: #000000;
+    font-weight: 300;
+    font-size: 2.1rem;
     margin-bottom: 3rem;
 }

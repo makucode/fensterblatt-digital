@@ -1,0 +1,61 @@
+.FaqItem {
+    display: flex;
+    cursor: pointer;
+}
+
+.btnContainer {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.btn {
+    height: 2px;
+    background-color: #636363;
+    width: 30px;
+    transition: all ease-in-out 0.3s;
+    display: block;
+}
+
+.btn::after {
+    height: 30px;
+    background-color: #636363;
+    width: 2px;
+    content: "";
+    display: block;
+    transition: all ease-in-out 0.3s;
+    transform: translate(14px, -14px);
+}
+
+.Open .btn::after {
+    transform: translate(14px, -14px) rotate(90deg) !important;
+}
+
+.FaqItemContent {
+    width: 50%;
+}
+
+.FaqItem h3 {
+    font-size: 1.5rem;
+}
+
+.FaqItem p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #636363;
+}
+
+.Collapsible {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+}
+
+.Open .Collapsible {
+    height: fit-content;
+}

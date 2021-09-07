@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+import { v4 as uuid } from "uuid";
 import styles from "../styles/Home.module.css";
 import {
     hero,
@@ -8,11 +8,25 @@ import {
     leistungen,
     projekte,
     faq,
-    kontak,
+    kontakt,
 } from "../public/text_content/indexContent";
-import LinkBtn from "../components/LinkBtn";
+import Seperator from "../components/Seperator";
+import LeistungenItem from "../components/index/LeistungenItem";
+import ProjektItem from "../components/ProjektItem";
+import FaqItem from "../components/index/FaqItem";
+import ArrowIcon from "../components/ArrowIcon";
 
 export default function Home() {
+    const renderProjects = () => {
+        return projekte.projekte.map((projekt) => (
+            <ProjektItem key={uuid()} {...projekt} />
+        ));
+    };
+
+    const renderFaqs = () => {
+        return faq.items.map((item) => <FaqItem key={uuid()} {...item} />);
+    };
+
     return (
         <div className={styles.container}>
             <Head>
@@ -28,7 +42,92 @@ export default function Home() {
                     <h1 className={styles.headingHero}>{hero.heading}</h1>
                     <p className={styles.headingHeroSub}>{hero.text1}</p>
                     <Link href="/kontakt" passHref>
-                        <LinkBtn text={hero.linkText1} isBold />
+                        <a className="bold">
+                            <ArrowIcon />
+                            {hero.linkText1}
+                        </a>
+                    </Link>
+                </section>
+                <section className={styles.indexAbout}>
+                    <div className={styles.indexAboutLeft}>
+                        <h3>{about.heading}</h3>
+                        <Link href="/about" passHref>
+                            <a className="thin">
+                                <ArrowIcon />
+                                {about.linkText1}
+                            </a>
+                        </Link>
+                    </div>
+                    <p>{about.text1}</p>
+                </section>
+                <Seperator />
+                <section className={styles.indexLeistungen}>
+                    <h2>{about.heading}</h2>
+                    <Link href="/leistungen" passHref>
+                        <a className="thin">
+                            <ArrowIcon />
+                            {leistungen.linkText1}
+                        </a>
+                    </Link>
+                    <div className={styles.LeistungenItems}>
+                        <LeistungenItem
+                            heading={leistungen.subHeading1}
+                            text={leistungen.text1}
+                            img={leistungen.img1}
+                            alt={leistungen.alt1}
+                        />
+                        <LeistungenItem
+                            heading={leistungen.subHeading2}
+                            text={leistungen.text2}
+                            img={leistungen.img1}
+                            alt={leistungen.alt1}
+                        />
+                        <LeistungenItem
+                            heading={leistungen.subHeading3}
+                            text={leistungen.text3}
+                            img={leistungen.img1}
+                            alt={leistungen.alt1}
+                        />
+                    </div>
+                </section>
+                <Seperator />
+                <section className={styles.indexProjekte}>
+                    <h2>{projekte.heading}</h2>
+                    <Link href="/projekte" passHref>
+                        <a className="thin">
+                            <ArrowIcon />
+                            {projekte.linkText1}
+                        </a>
+                    </Link>
+                    <div className={styles.indexProjekteItems}>
+                        {renderProjects()}
+                    </div>
+                </section>
+                <Seperator />
+                <section className={styles.indexFaq}>
+                    <h2>{faq.heading}</h2>
+                    <div className={styles.indexFaqItems}>{renderFaqs()}</div>
+                </section>
+                <Seperator />
+                <section className={styles.indexKontakt}>
+                    <h2>
+                        {kontakt.heading}
+                        <br />
+                        {kontakt.subHeading1}
+                    </h2>
+                    <div>
+                        <a
+                            className={styles.kontaktMail}
+                            href="mailto:kontakt@fensterblatt.digital"
+                        >
+                            kontakt@fensterblatt.digital
+                        </a>
+                    </div>
+                    <Link href="/kontakt" passHref>
+                        <a className="bold">
+                            <ArrowIcon />
+                            {kontakt.linkText1}
+                        </a>
                     </Link>
                 </section>
             </div>
