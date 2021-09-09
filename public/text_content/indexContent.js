@@ -34,7 +34,7 @@ export const projekte = {
             heading: "Mediation von Berg",
             tags: ["Webdevelopment", "Webdesign", "Fotografie", "Branding"],
             img: projektVonBerg,
-            alt: "", //INSERT!!!
+            alt: 'Screenshot der Internetseite von "Mediation von Berg"',
             align: "left",
             href: "/projekte/mediation-vonberg",
         },

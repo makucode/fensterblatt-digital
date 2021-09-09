@@ -1,0 +1,58 @@
+.projektHeading {
+    width: 66%;
+}
+
+.projektHeading a {
+    margin-top: 3vh;
+}
+
+.infoContainer {
+    margin-top: 10vh;
+}
+
+.projektInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projektInfo1 {
+    margin-bottom: 5vh;
+}
+
+.projektInfo h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    width: 25%;
+}
+
+.projektInfo p {
+    width: 66%;
+}
+
+.projektTags {
+    width: 66%;
+    margin-left: auto;
+    margin-top: 1vh;
+}
+
+.projektImgs {
+    margin-top: 10vh;
+}
+
+.projektImgs img {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imgContainer {
+    margin-top: 4vh;
+}
+
+.imgContainer div {
+    overflow: visible !important;
+}
+
+.link {
+    margin-top: 10vh;
+}
