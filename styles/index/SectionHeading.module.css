@@ -1,0 +1,21 @@
+.SectionHeading {
+    font-size: 5rem;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.SectionHeadingIn {
+    animation: animationIn 0.5s ease-in-out forwards;
+}
+
+@keyframes animationIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

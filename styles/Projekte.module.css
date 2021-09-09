@@ -1,0 +1,12 @@
+.projekteHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projekteHeading h1 {
+    width: 25%;
+}
+
+.projekteHeading p {
+    width: 55%;
+}

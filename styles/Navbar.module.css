@@ -8,14 +8,19 @@
     padding: 1rem 20vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 100;
     transition: all ease-in-out 0.3s;
     transform: translateY(0);
 }
 
+.Hidden {
+    transform: translateY(-100%);
+}
+
 .Navbar img {
     object-fit: contain;
-    height: 70px;
+    height: 60px;
 }
 
 .NavbarLinks {
@@ -26,10 +31,9 @@
 }
 
 .NavbarLinks a {
-    font-family: "ClashDisplay";
     color: black;
 }
 
-.Hidden {
-    transform: translateY(-100%);
+.NavbarLink {
+    transition: all ease-in-out 0.3s;
 }

@@ -1,0 +1,47 @@
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kontaktInfo {
+    width: 33%;
+}
+
+.kontaktInfo p {
+    margin-top: 0.5vh;
+}
+
+.kontakt form {
+    width: 55%;
+}
+
+.kontakt label {
+    margin-bottom: 1vh;
+}
+
+.kontakt input,
+.kontakt textarea {
+    border: 1px solid #707070;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+    margin-bottom: 4vh;
+}
+
+.kontakt textarea {
+    resize: none;
+}
+
+.kontakt button {
+    margin-left: auto;
+}
+
+.Mail {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 1.6rem;
+    font-weight: 500;
+}

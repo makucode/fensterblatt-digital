@@ -1,8 +1,3 @@
-.indexContent h2 {
-    font-size: 5rem;
-    font-weight: 300;
-}
-
 .indexHero {
     margin-top: 22vh;
 }
@@ -28,6 +23,11 @@
 
 .indexAboutLeft {
     width: 25%;
+    margin-right: 6%;
+}
+
+.indexAbout h3 {
+    line-height: 2.5rem;
 }
 
 .indexAbout p {
@@ -48,6 +48,11 @@
 
 .indexFaqItems {
     margin-top: 1.5rem;
+    font-family: "Montserrat";
+}
+
+.indexFaqItems h3 {
+    font-weight: 500;
 }
 
 /* KONTAKT */
@@ -59,7 +64,7 @@
 .kontaktMail {
     display: block;
     color: #000000;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 2.1rem;
     margin-bottom: 3rem;
 }

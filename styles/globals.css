@@ -29,6 +29,22 @@
 */
 
 @font-face {
+    font-family: "Montserrat";
+    src: url("../public/fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../public/fonts/Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "ClashDisplay";
     src: url("../public/fonts/ClashDisplay-Variable.woff2") format("woff2");
     font-weight: 200 700;
@@ -102,6 +118,11 @@ h6 {
     margin: 0;
 }
 
+.subH1 {
+    font-size: 4.7rem;
+    font-weight: 400;
+}
+
 h3 {
     font-size: 2.8rem;
     font-weight: 300;
@@ -111,11 +132,20 @@ p {
     padding: 0;
     margin: 0;
     font-size: 1.25rem;
+    font-family: "Montserrat";
+    font-weight: 400;
     color: #636363;
 }
 
 a {
+    font-family: "Montserrat";
+    font-weight: 400;
     text-decoration: none;
+}
+
+button {
+    font-family: "Montserrat";
+    font-weight: 400;
 }
 
 ul {
@@ -125,14 +155,32 @@ ul {
 }
 
 li {
+    font-family: "Montserrat";
+    font-weight: 400;
     padding: 0;
     margin: 0;
+}
+
+input,
+textarea,
+label {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: block;
 }
 
 /* PAGE WRAPPER */
 
 .page-wrapper {
     padding: 1rem 20vw; /* seperate for content, navbar and footer */
+}
+
+/* SUB PAGES */
+
+.subPageContent {
+    margin-top: 16vh;
+    margin-bottom: 20vh;
 }
 
 /* LINKS */
@@ -145,6 +193,7 @@ li {
     align-items: center;
     justify-content: space-between;
     width: fit-content;
+    border: none;
 }
 
 .bold svg,
@@ -178,3 +227,5 @@ li {
     fill: transparent;
     stroke: #000000;
 }
+
+/* -------------- */

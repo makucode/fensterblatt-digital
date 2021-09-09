@@ -1,0 +1,12 @@
+.leistungenHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leistungenHeading h1 {
+    width: 33%;
+}
+
+.leistungenHeading p {
+    width: 60%;
+}

@@ -10,16 +10,17 @@ import {
     faq,
     kontakt,
 } from "../public/text_content/indexContent";
-import Seperator from "../components/Seperator";
+import Separator from "../components/Separator";
 import LeistungenItem from "../components/index/LeistungenItem";
 import ProjektItem from "../components/ProjektItem";
 import FaqItem from "../components/index/FaqItem";
 import ArrowIcon from "../components/ArrowIcon";
+import SectionHeading from "../components/index/SectionHeading";
 
 export default function Home() {
     const renderProjects = () => {
-        return projekte.projekte.map((projekt) => (
-            <ProjektItem key={uuid()} {...projekt} />
+        return projekte.projekte.map((projekt, idx) => (
+            <ProjektItem key={uuid()} index={idx} {...projekt} />
         ));
     };
 
@@ -60,9 +61,9 @@ export default function Home() {
                     </div>
                     <p>{about.text1}</p>
                 </section>
-                <Seperator />
+                <Separator />
                 <section className={styles.indexLeistungen}>
-                    <h2>{about.heading}</h2>
+                    <SectionHeading text={leistungen.heading} />
                     <Link href="/leistungen" passHref>
                         <a className="thin">
                             <ArrowIcon />
@@ -90,9 +91,9 @@ export default function Home() {
                         />
                     </div>
                 </section>
-                <Seperator />
+                <Separator />
                 <section className={styles.indexProjekte}>
-                    <h2>{projekte.heading}</h2>
+                    <SectionHeading text={projekte.heading} />
                     <Link href="/projekte" passHref>
                         <a className="thin">
                             <ArrowIcon />
@@ -103,18 +104,15 @@ export default function Home() {
                         {renderProjects()}
                     </div>
                 </section>
-                <Seperator />
+                <Separator />
                 <section className={styles.indexFaq}>
-                    <h2>{faq.heading}</h2>
+                    <SectionHeading text={faq.heading} />
                     <div className={styles.indexFaqItems}>{renderFaqs()}</div>
                 </section>
-                <Seperator />
+                <Separator />
                 <section className={styles.indexKontakt}>
-                    <h2>
-                        {kontakt.heading}
-                        <br />
-                        {kontakt.subHeading1}
-                    </h2>
+                    <SectionHeading text={kontakt.heading} />
+                    <SectionHeading text={kontakt.subHeading1} />
                     <div>
                         <a
                             className={styles.kontaktMail}

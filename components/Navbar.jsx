@@ -37,16 +37,16 @@ function Navbar() {
 
             <div className={styles.NavbarLinks}>
                 <Link passHref href="/projekte">
-                    <a>Projekte</a>
+                    <a className={styles.NavbarLink}>Projekte</a>
                 </Link>
                 <Link passHref href="/leistungen">
-                    <a>Leistungen</a>
+                    <a className={styles.NavbarLink}>Leistungen</a>
                 </Link>
                 <Link passHref href="/about">
-                    <a>Über uns</a>
+                    <a className={styles.NavbarLink}>Über uns</a>
                 </Link>
                 <Link passHref href="/kontakt">
-                    <a>Kontakt</a>
+                    <a className={styles.NavbarLink}>Kontakt</a>
                 </Link>
             </div>
         </nav>

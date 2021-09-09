@@ -1,0 +1,45 @@
+.leistungenItem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16vh;
+}
+
+.leistungenItem h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1vh;
+}
+
+.leistungenItem p {
+    margin-bottom: 1vh;
+}
+
+.itemImg {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3vh;
+}
+
+.itemImg img {
+    width: 100%;
+}
+
+.itemInfo {
+    width: 60%;
+}
+
+.itemTags {
+    width: 70%;
+}
+
+/* reverse */
+
+.reverse .itemImg {
+    order: 2;
+}
+
+.reverse .itemInfo {
+    order: 1;
+}
