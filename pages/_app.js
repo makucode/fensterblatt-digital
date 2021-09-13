@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
+import useKeepStyles from "../hooks/useKeepStyles";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps, router }) {
     const animations = {
@@ -18,6 +20,9 @@ function MyApp({ Component, pageProps, router }) {
             opacity: 0,
         },
     };
+
+    //FIX FOR FLASHING UNSTYLED COMPONENTS ON PAGE CHANGE
+    useKeepStyles();
 
     return (
         <>
