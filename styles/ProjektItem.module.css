@@ -4,6 +4,10 @@
     margin: 9vh 0;
 }
 
+.ProjektItem h3 {
+    font-size: 4rem;
+}
+
 .ProjektItem div {
     background: none !important;
 }

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import useOnScreen from "../hooks/useOnScreen";
 import styles from "../../styles/index/SectionHeading.module.css";
 

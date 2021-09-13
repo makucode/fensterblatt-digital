@@ -10,6 +10,8 @@ import {
 } from "../public/text_content/aboutContent";
 import Tracker from "../components/about/Tracker";
 
+//ADD PROP "PRIOTITY" TO IMG FOR FASTER LOAD
+
 function About() {
     const renderTrackers = () => {
         return tracker.map((tracker) => <Tracker key={uuid()} {...tracker} />);

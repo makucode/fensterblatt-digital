@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function useOnScreen(ref, rootMargin = "0px") {
     const [isIntersecting, setIntersecting] = useState(false);
@@ -17,7 +17,7 @@ export default function useOnScreen(ref, rootMargin = "0px") {
         return () => {
             observer.disconnect();
         };
-    }, []);
+    }, []); //CHECK!
 
     return isIntersecting;
 }
