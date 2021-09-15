@@ -4,7 +4,7 @@ import projektVonBerg from "../imgs/projekt_mediation_vonberg.png";
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
     text1: "Wir bieten digitale Lösungen für Selbstständige, Kleinunternehmer sowie mittelständische Unternehmen.", //CHECK
-    linkText1: "Schreiben sie uns", //CHECK
+    linkText1: "Schreiben Sie uns", //CHECK
 };
 
 export const about = {
@@ -69,6 +69,6 @@ export const faq = {
 
 export const kontakt = {
     heading: "Interessiert?",
-    subHeading1: "Schreiben sie uns",
+    subHeading1: "Schreiben Sie uns",
     linkText1: "Zum Kontaktformular",
 };

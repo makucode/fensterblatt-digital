@@ -10,10 +10,12 @@ function MyApp({ Component, pageProps, router }) {
         pageInitial: {
             filter: "blur(3px)",
             opacity: 0,
+            scale: 0.995,
         },
         pageAnimate: {
             filter: "blur(0px)",
             opacity: 1,
+            scale: 1,
         },
         pageExit: {
             filter: "blur(3px)",

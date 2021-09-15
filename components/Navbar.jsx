@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useScrollDirection } from "react-use-scroll-direction";
 import styles from "../styles/Navbar.module.css";
 import logo from "../public/imgs/logo_schwarz.png";
 import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 function Navbar() {
     const {
@@ -16,6 +18,8 @@ function Navbar() {
         isScrollingRight,
         scrollDirection,
     } = useScrollDirection();
+
+    const { pathname } = useRouter();
 
     const [showNav, setShowNav] = useState(true);
 
@@ -31,13 +35,23 @@ function Navbar() {
         <nav className={styles.Navbar + (!showNav ? " " + styles.Hidden : "")}>
             <Link href="/" passHref>
                 <a>
-                    <Image src={logo} alt="Logo von Fensterblatt Webdesign" />
+                    <Logo />
                 </a>
             </Link>
 
             <div className={styles.NavbarLinks}>
                 <Link passHref href="/projekte">
-                    <a className={styles.NavbarLink}>Projekte</a>
+                    <a
+                        className={
+                            styles.NavbarLink +
+                            " " +
+                            (pathname.includes("projekte")
+                                ? styles.NavActive
+                                : "")
+                        }
+                    >
+                        Projekte
+                    </a>
                 </Link>
                 <Link passHref href="/leistungen">
                     <a className={styles.NavbarLink}>Leistungen</a>

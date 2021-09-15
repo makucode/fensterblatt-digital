@@ -1,5 +1,5 @@
 export const info = {
-    heading: "Schreiben sie uns.",
+    heading: "Schreiben Sie uns.",
     text1: "Sie helfen uns ihr Anliegen zu verstehen, indem Sie ihr Projekt beschreiben und uns ihr grobes Budget und Zeitfenster mitteilen.",
 };
 
