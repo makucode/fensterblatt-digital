@@ -22,6 +22,7 @@ function Navbar() {
     const { pathname } = useRouter();
 
     const [showNav, setShowNav] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         if (scrollDirection === "DOWN") {
@@ -38,7 +39,6 @@ function Navbar() {
                     <Logo />
                 </a>
             </Link>
-
             <div className={styles.NavbarLinks}>
                 <Link passHref href="/projekte">
                     <a
@@ -54,13 +54,37 @@ function Navbar() {
                     </a>
                 </Link>
                 <Link passHref href="/leistungen">
-                    <a className={styles.NavbarLink}>Leistungen</a>
+                    <a
+                        className={
+                            styles.NavbarLink +
+                            " " +
+                            (pathname === "/leistungen" ? styles.NavActive : "")
+                        }
+                    >
+                        Leistungen
+                    </a>
                 </Link>
                 <Link passHref href="/about">
-                    <a className={styles.NavbarLink}>Über uns</a>
+                    <a
+                        className={
+                            styles.NavbarLink +
+                            " " +
+                            (pathname === "/about" ? styles.NavActive : "")
+                        }
+                    >
+                        Über uns
+                    </a>
                 </Link>
                 <Link passHref href="/kontakt">
-                    <a className={styles.NavbarLink}>Kontakt</a>
+                    <a
+                        className={
+                            styles.NavbarLink +
+                            " " +
+                            (pathname === "/kontakt" ? styles.NavActive : "")
+                        }
+                    >
+                        Kontakt
+                    </a>
                 </Link>
             </div>
         </nav>

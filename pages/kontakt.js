@@ -11,6 +11,17 @@ function KontaktPage() {
     const [email, setEmail] = useState("");
     const [msg, setMsg] = useState("");
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        fetch("/api/mail", {
+            method: "post",
+            body: JSON.stringify({ name, email, msg }),
+        });
+        setName("");
+        setEmail("");
+        setMsg("");
+    };
+
     return (
         <div className={styles.container}>
             <Head>
@@ -37,7 +48,10 @@ function KontaktPage() {
                             </Link>
                         </div>
                     </div>
-                    <form className={styles.kontaktForm}>
+                    <form
+                        className={styles.kontaktForm}
+                        onSubmit={handleSubmit}
+                    >
                         <label htmlFor="name">{form.labelName}</label>
                         <input
                             id="name"

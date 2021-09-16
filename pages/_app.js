@@ -3,7 +3,6 @@ import useKeepStyles from "../hooks/useKeepStyles";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps, router }) {
     const animations = {
