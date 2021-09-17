@@ -106,6 +106,25 @@ body {
     margin: 0;
     font-family: "ClashDisplay";
     background-color: #f8f8f8;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #a1a1a1 transparent;
+}
+
+/* custom scrollbar */
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(173, 173, 173);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
 }
 
 h1,
@@ -177,7 +196,7 @@ label {
 /* PAGE WRAPPER */
 
 .page-wrapper {
-    padding: 1rem 20vw; /* seperate for content, navbar and footer */
+    padding: 1rem 20vw; /* seperate for content, navbar, burger btn and footer */
 }
 
 /* SUB PAGES */

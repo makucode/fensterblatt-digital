@@ -1,8 +1,12 @@
+import { useState, useEffect } from "react";
+import useWindowDimensions from "../hooks/useWindowDimensions.js";
 import { AnimatePresence, motion } from "framer-motion";
 import useKeepStyles from "../hooks/useKeepStyles";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import MobileMenu from "../components/navbar/MobileMenu.jsx";
+import BurgerBtn from "../components/navbar/BurgerBtn.jsx";
 
 function MyApp({ Component, pageProps, router }) {
     const animations = {
@@ -22,12 +26,36 @@ function MyApp({ Component, pageProps, router }) {
         },
     };
 
+    const { height, width } = useWindowDimensions();
+    const [isMobile, setIsMobile] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        if (height / width >= 1 || width <= 1024) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+        }
+
+        console.log(height);
+    }, [height, width]);
+
     //FIX FOR FLASHING UNSTYLED COMPONENTS ON PAGE CHANGE
     useKeepStyles();
 
     return (
         <>
-            <Navbar />
+            <Navbar
+                isMobile={isMobile}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
+            />
+            {isMobile && (
+                <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            )}
+            {isMobile && (
+                <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            )}
             <AnimatePresence exitBeforeEnter>
                 <motion.div
                     key={router.route}

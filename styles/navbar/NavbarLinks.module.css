@@ -1,0 +1,53 @@
+.NavbarLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.NavbarLink::after {
+    content: "";
+    display: block;
+    width: 0;
+    background-color: black;
+    margin-top: 0.1rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    border-bottom: solid 1px white;
+    margin-left: auto;
+}
+
+.NavbarLink:hover:after {
+    width: 100%;
+    border-bottom: solid 1px black;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.NavbarLinks a {
+    color: black;
+    text-transform: capitalize;
+}
+
+.NavbarLink {
+    transition: all ease-in-out 0.3s;
+}
+
+.NavActive::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: black;
+    margin-top: 0.1rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    border-bottom: solid 1px black;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.NavActive:hover:after {
+    width: 0%;
+    margin-left: auto;
+    margin-right: 0;
+}
