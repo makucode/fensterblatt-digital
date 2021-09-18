@@ -16,6 +16,7 @@ import ProjektItem from "../components/ProjektItem";
 import FaqItem from "../components/index/FaqItem";
 import ArrowIcon from "../components/ArrowIcon";
 import SectionHeading from "../components/index/SectionHeading";
+import ImgBoxes from "../components/index/ImgBoxes";
 
 export default function Home() {
     const renderProjects = () => {
@@ -40,6 +41,7 @@ export default function Home() {
             </Head>
             <div className={styles.indexContent}>
                 <section className={styles.indexHero}>
+                    <ImgBoxes />
                     <h1 className={styles.headingHero}>{hero.heading}</h1>
                     <p className={styles.headingHeroSub}>{hero.text1}</p>
                     <Link href="/kontakt" passHref>

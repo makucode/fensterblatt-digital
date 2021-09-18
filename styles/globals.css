@@ -164,6 +164,8 @@ a {
     font-family: "Montserrat";
     font-weight: 400;
     text-decoration: none;
+    position: relative;
+    z-index: 20;
 }
 
 button {
@@ -250,5 +252,3 @@ label {
     fill: transparent;
     stroke: #000000;
 }
-
-/* -------------- */

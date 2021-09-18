@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions.js";
 import { AnimatePresence, motion } from "framer-motion";
 import useKeepStyles from "../hooks/useKeepStyles";
@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import MobileMenu from "../components/navbar/MobileMenu.jsx";
 import BurgerBtn from "../components/navbar/BurgerBtn.jsx";
+import Scroller from "../components/Scroller.jsx";
 
 function MyApp({ Component, pageProps, router }) {
     const animations = {
@@ -36,8 +37,6 @@ function MyApp({ Component, pageProps, router }) {
         } else {
             setIsMobile(false);
         }
-
-        console.log(height);
     }, [height, width]);
 
     //FIX FOR FLASHING UNSTYLED COMPONENTS ON PAGE CHANGE
@@ -50,27 +49,29 @@ function MyApp({ Component, pageProps, router }) {
                 menuOpen={menuOpen}
                 setMenuOpen={setMenuOpen}
             />
-            {isMobile && (
-                <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            )}
-            {isMobile && (
-                <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            )}
-            <AnimatePresence exitBeforeEnter>
-                <motion.div
-                    key={router.route}
-                    transition={{ duration: 0.5 }}
-                    initial="pageInitial"
-                    animate="pageAnimate"
-                    exit="pageExit"
-                    variants={animations}
-                >
-                    <div className="page-wrapper">
-                        <Component {...pageProps} />
-                    </div>
-                </motion.div>
-            </AnimatePresence>
-            <Footer />
+            <Scroller>
+                {isMobile && (
+                    <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                )}
+                {isMobile && (
+                    <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                )}
+                <AnimatePresence exitBeforeEnter>
+                    <motion.div
+                        key={router.route}
+                        transition={{ duration: 0.5 }}
+                        initial="pageInitial"
+                        animate="pageAnimate"
+                        exit="pageExit"
+                        variants={animations}
+                    >
+                        <div className="page-wrapper">
+                            <Component {...pageProps} />
+                        </div>
+                    </motion.div>
+                </AnimatePresence>
+                <Footer />
+            </Scroller>
         </>
     );
 }

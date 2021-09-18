@@ -1,0 +1,20 @@
+.indexHeroBoxes {
+    display: flex;
+    position: fixed;
+    top: 25vh;
+    right: 20vw;
+}
+
+.indexHeroBoxes div {
+    transition: all ease 0.2s;
+}
+
+.indexHeroBoxes img {
+    display: block;
+    width: 8vw;
+    margin-left: 20px !important;
+}
+
+.indexHeroBoxes:nth-child(2) {
+    margin-top: -10px;
+}
