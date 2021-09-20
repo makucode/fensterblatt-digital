@@ -5,10 +5,7 @@ import styles from "../../styles/index/SectionHeading.module.css";
 function SectionHeading(props) {
     const heading = useRef();
     const isVisible = useOnScreen(heading);
-
     const splittedText = props.text.split("");
-
-    console.log(props.text.split(""));
 
     return (
         <h2
@@ -28,7 +25,7 @@ function SectionHeading(props) {
                         key={idx}
                         style={{
                             transitionDelay:
-                                " " + (idx / 100 + 0.01) + "s !important",
+                                " " + (idx / 100 + 0.01).toFixed(2) + "s",
                         }}
                     >
                         {char}
