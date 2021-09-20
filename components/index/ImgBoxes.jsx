@@ -23,10 +23,9 @@ const ImgBoxes = () => {
             <div
                 style={{
                     transform: `translateY(${offsetY * 0.6}px) scale(${
-                        1 - Math.abs(offsetY / height)
+                        1 - Math.abs(offsetY / height) / 2
                     })`,
-                    opacity: 1 - Math.abs(offsetY / (height / 2)),
-                    filter: `blur(${Math.abs(offsetY) / 5}px)`,
+                    filter: `blur(${Math.abs(offsetY) / 10}px)`,
                 }}
             >
                 <Image src={boxImage} alt="Foto von einer Pflanze" />
@@ -36,10 +35,9 @@ const ImgBoxes = () => {
                     transform: `translateY(${
                         offsetY ? offsetY * 1 - 30 : -30
                     }px) scale(${
-                        offsetY ? 1 - Math.abs(offsetY / height) : 1
+                        offsetY ? 1 - Math.abs(offsetY / height) / 2 : 1
                     })`,
-                    opacity: 1 - Math.abs(offsetY / (height / 2)),
-                    filter: `blur(${Math.abs(offsetY) / 5}px)`,
+                    filter: `blur(${Math.abs(offsetY) / 10}px)`,
                 }}
             >
                 <Image src={boxImage} alt="Foto von einer Pflanze" />

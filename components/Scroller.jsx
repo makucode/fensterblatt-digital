@@ -3,12 +3,14 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 import styles from "../styles/Scroller.module.css";
 
 const Scroller = ({ children }) => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     const app = useRef();
     const scrollContainer = useRef();
 
     useEffect(() => {
+        document.body.style.height =
+            scrollContainer.current.getBoundingClientRect().height + "px";
         setTimeout(() => {
             document.body.style.height =
                 scrollContainer.current.getBoundingClientRect().height + "px";

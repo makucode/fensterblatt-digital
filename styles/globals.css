@@ -109,6 +109,7 @@ body {
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: #a1a1a1 transparent;
+    overscroll-behavior-y: none;
 }
 
 /* custom scrollbar */

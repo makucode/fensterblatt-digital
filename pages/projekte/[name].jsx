@@ -58,7 +58,7 @@ function SingleProjektPage(props) {
                         </div>
                     </section>
                     <section className={styles.link}>
-                        <Link href={projekt.href} passHref>
+                        <Link href="/projekte" passHref>
                             <a className="thin">
                                 <ArrowIcon />
                                 Zurück zur Projektübersicht

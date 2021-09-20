@@ -41,7 +41,11 @@ function KontaktPage() {
                             kontakt@Fensterblatt.digital
                         </span>
                         <div className={styles.Icons}>
-                            <Link href="https://xing.de" passHref>
+                            <Link
+                                scroll={false}
+                                href="https://xing.de"
+                                passHref
+                            >
                                 <a>
                                     <XingIcon />
                                 </a>

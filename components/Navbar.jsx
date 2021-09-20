@@ -21,9 +21,9 @@ function Navbar({ isMobile, menuOpen, setMenuOpen }) {
     const [showNav, setShowNav] = useState(true);
 
     useEffect(() => {
-        if (scrollDirection === "DOWN") {
+        if (scrollDirection === "DOWN" && window.pageYOffset > 0) {
             setShowNav(false);
-        } else if (scrollDirection === "UP") {
+        } else if (scrollDirection === "UP" || window.pageYOffset <= 0) {
             setShowNav(true);
         }
     }, [scrollDirection]);

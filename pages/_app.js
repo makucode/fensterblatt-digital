@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import useWindowDimensions from "../hooks/useWindowDimensions.js";
+import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
 import useKeepStyles from "../hooks/useKeepStyles";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import useWindowDimensions from "../hooks/useWindowDimensions.js";
 import MobileMenu from "../components/navbar/MobileMenu.jsx";
 import BurgerBtn from "../components/navbar/BurgerBtn.jsx";
 import Scroller from "../components/Scroller.jsx";
@@ -56,7 +57,10 @@ function MyApp({ Component, pageProps, router }) {
                 {isMobile && (
                     <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 )}
-                <AnimatePresence exitBeforeEnter>
+                <AnimatePresence
+                    exitBeforeEnter
+                    onExitComplete={() => window.scrollTo(0, 0)}
+                >
                     <motion.div
                         key={router.route}
                         transition={{ duration: 0.5 }}
