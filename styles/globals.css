@@ -220,16 +220,28 @@ label {
     justify-content: space-between;
     width: fit-content;
     border: none;
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.3s;
+    padding-left: 55px;
 }
 
 .bold svg,
 .thin svg {
     margin-right: 1rem;
+    position: absolute;
+    right: 100%;
+    transform: translateX(200%);
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.4s;
+}
+
+.bold svg line,
+.thin svg line {
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.4s;
 }
 
 .bold {
     color: #ffffff;
     padding: 1.25rem;
+    padding-left: calc(1.25rem + 35px);
     background: rgb(0, 70, 67);
     background: linear-gradient(
         145deg,
@@ -252,4 +264,23 @@ label {
 .thin > svg {
     fill: transparent;
     stroke: #000000;
+}
+
+/* HOVER */
+
+.bold:hover,
+.thin:hover {
+    color: transparent;
+}
+
+.bold:hover svg,
+.thin:hover svg {
+    position: absolute;
+    right: 0;
+    transform: translateX(0);
+}
+
+.bold:hover line,
+.thin:hover line {
+    opacity: 0;
 }
