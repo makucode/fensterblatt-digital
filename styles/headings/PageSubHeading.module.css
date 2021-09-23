@@ -1,0 +1,20 @@
+.PageSubHeading {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PageSubHeading div {
+    display: flex;
+}
+
+.PageSubHeading span {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.PageSubHeadingIn span {
+    display: block;
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}

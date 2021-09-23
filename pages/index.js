@@ -19,6 +19,7 @@ import SectionHeading from "../components/SectionHeading";
 import ImgBoxes from "../components/index/ImgBoxes";
 import HeroHeading from "../components/index/HeroHeading";
 import AboutHeading from "../components/index/AboutHeading";
+import KontaktMail from "../components/index/KontaktMail";
 
 export default function Home() {
     const renderProjects = () => {
@@ -49,7 +50,6 @@ export default function Home() {
                     <Link href="/kontakt" passHref>
                         <a className="bold">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             <span>{hero.linkText1}</span>
                         </a>
@@ -61,7 +61,6 @@ export default function Home() {
                         <Link href="/about" passHref>
                             <a className="thin">
                                 <div className="arrow"></div>
-                                <div className="arrowLine"></div>
                                 <ArrowIcon />
                                 <span>{about.linkText1}</span>
                             </a>
@@ -75,7 +74,6 @@ export default function Home() {
                     <Link href="/leistungen" passHref>
                         <a className="thin">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             <span>{leistungen.linkText1}</span>
                         </a>
@@ -107,7 +105,6 @@ export default function Home() {
                     <Link href="/projekte" passHref>
                         <a className="thin">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             <span>{projekte.linkText1}</span>
                         </a>
@@ -130,13 +127,12 @@ export default function Home() {
                             className={styles.kontaktMail}
                             href="mailto:kontakt@fensterblatt.digital"
                         >
-                            kontakt@fensterblatt.digital
+                            <KontaktMail text="kontakt@fensterblatt.digital" />
                         </a>
                     </div>
                     <Link href="/kontakt" passHref>
                         <a className="bold">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             <span>{kontakt.linkText1}</span>
                         </a>

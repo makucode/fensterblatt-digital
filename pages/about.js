@@ -10,6 +10,7 @@ import {
 } from "../public/text_content/aboutContent";
 import Tracker from "../components/about/Tracker";
 import PageHeading from "../components/PageHeading";
+import PageSubHeading from "../components/PageSubHeading";
 
 //ADD PROP "PRIOTITY" TO IMG FOR FASTER LOAD
 
@@ -34,7 +35,7 @@ function About() {
                 </section>
                 <section className={styles.aboutSection}>
                     <div className={styles.aboutInfo}>
-                        <h2>{about.heading}</h2>
+                        <PageSubHeading text={about.heading} size="4.3rem" />
                         <p>{about.text1}</p>
                     </div>
                     <div className={styles.aboutInfoImg}>

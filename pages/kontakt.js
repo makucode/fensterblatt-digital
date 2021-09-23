@@ -89,7 +89,6 @@ function KontaktPage() {
                         ></textarea>
                         <button className="bold" type="submit">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             <span>{link.linkText1}</span>
                         </button>

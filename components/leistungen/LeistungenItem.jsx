@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Tags from "../Tags";
 import styles from "../../styles/leistungen/LeistungenItem.module.css";
+import PageSubHeading from "../PageSubHeading";
 
 function LeistungenItem(props) {
     return (
@@ -19,7 +20,7 @@ function LeistungenItem(props) {
                 />
             </div>
             <div className={styles.itemInfo}>
-                <h2>{props.heading}</h2>
+                <PageSubHeading text={props.heading} size={"3.5rem"} />
                 <p>{props.text1}</p>
                 <div className={styles.itemTags}>
                     <Tags tags={props.tags} />

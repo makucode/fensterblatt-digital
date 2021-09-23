@@ -20,7 +20,6 @@ function Tracker(props) {
             <Link href={props.link1} passHref>
                 <a className="thin">
                     <div className="arrow"></div>
-                    <div className="arrowLine"></div>
                     <ArrowIcon />
                     <span>{props.linkText1}</span>
                 </a>

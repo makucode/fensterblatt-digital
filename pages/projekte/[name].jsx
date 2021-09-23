@@ -29,7 +29,6 @@ function SingleProjektPage(props) {
                     <Link href={projekt.href} passHref>
                         <a className="thin">
                             <div className="arrow"></div>
-                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             Zur Live-Webseite
                         </a>
@@ -63,7 +62,7 @@ function SingleProjektPage(props) {
                         <Link href="/projekte" passHref>
                             <a className="thin">
                                 <div className="arrow"></div>
-                                <div className="arrowLine"></div>
+
                                 <ArrowIcon />
                                 <span>Zurück zur Projektübersicht</span>
                             </a>
