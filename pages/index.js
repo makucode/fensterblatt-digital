@@ -48,8 +48,10 @@ export default function Home() {
                     <p className={styles.headingHeroSub}>{hero.text1}</p>
                     <Link href="/kontakt" passHref>
                         <a className="bold">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
-                            {hero.linkText1}
+                            <span>{hero.linkText1}</span>
                         </a>
                     </Link>
                 </section>
@@ -58,8 +60,10 @@ export default function Home() {
                         <AboutHeading text={about.heading} />
                         <Link href="/about" passHref>
                             <a className="thin">
+                                <div className="arrow"></div>
+                                <div className="arrowLine"></div>
                                 <ArrowIcon />
-                                {about.linkText1}
+                                <span>{about.linkText1}</span>
                             </a>
                         </Link>
                     </div>
@@ -70,8 +74,10 @@ export default function Home() {
                     <SectionHeading text={leistungen.heading} />
                     <Link href="/leistungen" passHref>
                         <a className="thin">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
-                            {leistungen.linkText1}
+                            <span>{leistungen.linkText1}</span>
                         </a>
                     </Link>
                     <div className={styles.LeistungenItems}>
@@ -100,8 +106,10 @@ export default function Home() {
                     <SectionHeading text={projekte.heading} />
                     <Link href="/projekte" passHref>
                         <a className="thin">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
-                            {projekte.linkText1}
+                            <span>{projekte.linkText1}</span>
                         </a>
                     </Link>
                     <div className={styles.indexProjekteItems}>
@@ -127,8 +135,10 @@ export default function Home() {
                     </div>
                     <Link href="/kontakt" passHref>
                         <a className="bold">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
-                            {kontakt.linkText1}
+                            <span>{kontakt.linkText1}</span>
                         </a>
                     </Link>
                 </section>

@@ -19,8 +19,10 @@ function ProjektItem(props) {
                 <Tags tags={props.tags} />
                 <Link href={props.href} passHref>
                     <a className="thin">
+                        <div className="arrow"></div>
+                        <div className="arrowLine"></div>
                         <ArrowIcon />
-                        Projekt ansehen
+                        <span>Projekt ansehen</span>
                     </a>
                 </Link>
             </div>

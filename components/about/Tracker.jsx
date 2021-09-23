@@ -19,8 +19,10 @@ function Tracker(props) {
             <p>{props.text1}</p>
             <Link href={props.link1} passHref>
                 <a className="thin">
+                    <div className="arrow"></div>
+                    <div className="arrowLine"></div>
                     <ArrowIcon />
-                    {props.linkText1}
+                    <span>{props.linkText1}</span>
                 </a>
             </Link>
         </div>

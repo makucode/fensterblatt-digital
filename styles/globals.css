@@ -213,35 +213,56 @@ label {
 
 .bold,
 .thin {
-    cursor: pointer;
-    font-size: 1.25rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    cursor: pointer;
+    font-size: 1.25rem;
     width: fit-content;
     border: none;
     transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.3s;
-    padding-left: 55px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.bold span,
+.thin span {
+    margin-left: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.3s;
+}
+
+.bold::before,
+.thin::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    min-width: 0;
+    background-color: white;
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.3s;
+    z-index: 20;
+}
+
+.thin::before {
+    background-color: black;
 }
 
 .bold svg,
 .thin svg {
-    margin-right: 1rem;
-    position: absolute;
-    right: 100%;
-    transform: translateX(200%);
-    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.4s;
+    fill: transparent;
+    stroke: white;
+    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.3s;
+    min-width: 29px;
 }
 
-.bold svg line,
-.thin svg line {
-    transition: all cubic-bezier(0, 0.84, 0.06, 0.83) 0.4s;
+.thin svg {
+    stroke: black;
 }
 
 .bold {
     color: #ffffff;
     padding: 1.25rem;
-    padding-left: calc(1.25rem + 35px);
     background: rgb(0, 70, 67);
     background: linear-gradient(
         145deg,
@@ -251,38 +272,37 @@ label {
     border-radius: 7px;
 }
 
-.bold > svg {
-    fill: transparent;
-    stroke: #ffffff;
-}
-
 .thin {
     color: #000000;
     margin-top: 1.5rem;
 }
 
-.thin > svg {
-    fill: transparent;
-    stroke: #000000;
+.thin > .arrow,
+.thin > .arrow::after {
+    color: black;
+    background-color: black;
 }
 
 /* HOVER */
 
-.bold:hover,
-.thin:hover {
-    color: transparent;
+.bold:hover span,
+.thin:hover span {
+    opacity: 0;
 }
 
 .bold:hover svg,
 .thin:hover svg {
-    position: absolute;
-    right: 0;
-    transform: translateX(0);
+    transform: translateX(-29px);
 }
 
-.bold:hover line,
-.thin:hover line {
-    opacity: 0;
+.bold:hover svg line,
+.thin:hover svg line {
+    stroke: transparent;
+}
+
+.bold:hover:before,
+.thin:hover:before {
+    min-width: calc(100%);
 }
 
 @media only screen and (max-width: 600px) {

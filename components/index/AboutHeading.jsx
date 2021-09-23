@@ -9,7 +9,7 @@ const AboutHeading = (props) => {
     const splittedText = splittedWords.map((word) => [...word.split("")]);
 
     const getWords = () => {
-        let counter = 5;
+        let counter = 10;
         return splittedText.map((word, idx) => {
             return (
                 <div key={idx}>

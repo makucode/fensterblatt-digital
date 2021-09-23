@@ -88,8 +88,10 @@ function KontaktPage() {
                             onChange={(e) => setMsg(e.target.value)}
                         ></textarea>
                         <button className="bold" type="submit">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
-                            {link.linkText1}
+                            <span>{link.linkText1}</span>
                         </button>
                     </form>
                 </section>

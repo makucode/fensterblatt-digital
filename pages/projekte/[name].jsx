@@ -28,6 +28,8 @@ function SingleProjektPage(props) {
                     <p>{projekt.text1}</p>
                     <Link href={projekt.href} passHref>
                         <a className="thin">
+                            <div className="arrow"></div>
+                            <div className="arrowLine"></div>
                             <ArrowIcon />
                             Zur Live-Webseite
                         </a>
@@ -60,8 +62,10 @@ function SingleProjektPage(props) {
                     <section className={styles.link}>
                         <Link href="/projekte" passHref>
                             <a className="thin">
+                                <div className="arrow"></div>
+                                <div className="arrowLine"></div>
                                 <ArrowIcon />
-                                Zurück zur Projektübersicht
+                                <span>Zurück zur Projektübersicht</span>
                             </a>
                         </Link>
                     </section>
