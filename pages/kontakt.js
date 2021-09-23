@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Kontakt.module.css";
+import styles from "../styles/pages/Kontakt.module.css";
 import { info, form, link } from "../public/text_content/kontaktContent";
 import { useState } from "react";
-import ArrowIcon from "../components/ArrowIcon";
+import ArrowIcon from "../components/svgs/ArrowIcon";
 import XingIcon from "../components/kontakt/XingIcon";
+import PageHeading from "../components/PageHeading";
 
 function KontaktPage() {
     const [name, setName] = useState("");
@@ -35,7 +36,7 @@ function KontaktPage() {
             <div className="subPageContent">
                 <section className={styles.kontakt}>
                     <div className={styles.kontaktInfo}>
-                        <h1 className="subH1">{info.heading}</h1>
+                        <PageHeading text={info.heading} />
                         <p>{info.text1}</p>
                         <span className={styles.Mail}>
                             kontakt@Fensterblatt.digital

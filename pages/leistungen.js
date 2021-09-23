@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { v4 as uuid } from "uuid";
-import styles from "../styles/Leistungen.module.css";
+import styles from "../styles/pages/Leistungen.module.css";
 import { heading, items } from "../public/text_content/leistungenContent";
 import LeistungenItem from "../components/leistungen/LeistungenItem";
+import PageHeading from "../components/PageHeading";
 
 function Leistungen() {
     const renderLeistungenItems = () => {
@@ -23,7 +24,7 @@ function Leistungen() {
             </Head>
             <div className="subPageContent">
                 <section className={styles.leistungenHeading}>
-                    <h1 className="subH1">Leistungen</h1>
+                    <PageHeading text={heading.heading} />
                     <p>{heading.text1}</p>
                 </section>
                 <section className={styles.leistungenItems}>

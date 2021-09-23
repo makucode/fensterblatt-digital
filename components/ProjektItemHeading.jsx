@@ -1,15 +1,15 @@
-import { useEffect, useRef } from "react";
-import useOnScreen from "../../hooks/useOnScreen";
-import styles from "../../styles/headings/HeroHeading.module.css";
+import React, { useRef } from "react";
+import useOnScreen from "../hooks/useOnScreen";
+import styles from "../styles/headings/ProjektItemHeading.module.css";
 
-function HeroHeading(props) {
+const ProjektItemHeading = (props) => {
     const heading = useRef();
     const isVisible = useOnScreen(heading);
     const splittedWords = props.text.split(" ");
     const splittedText = splittedWords.map((word) => [...word.split("")]);
 
     const getWords = () => {
-        let counter = 0;
+        let counter = 5;
         return splittedText.map((word, idx) => {
             return (
                 <div key={idx}>
@@ -34,19 +34,17 @@ function HeroHeading(props) {
     };
 
     return (
-        <div className={styles.HeroHeadingContainer}>
-            <h1
-                className={
-                    styles.HeroHeading +
-                    " " +
-                    (isVisible ? styles.HeroHeadingIn : "")
-                }
-                ref={heading}
-            >
-                {getWords()}
-            </h1>
-        </div>
+        <h3
+            className={
+                styles.projektItemHeading +
+                " " +
+                (isVisible ? styles.projektItemHeadingIn : "")
+            }
+            ref={heading}
+        >
+            {getWords()}
+        </h3>
     );
-}
+};
 
-export default HeroHeading;
+export default ProjektItemHeading;

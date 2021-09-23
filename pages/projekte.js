@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { v4 as uuid } from "uuid";
-import styles from "../styles/Projekte.module.css";
+import styles from "../styles/pages/Projekte.module.css";
 import ProjektItem from "../components/ProjektItem";
 import { heading, projekte } from "../public/text_content/projekteContent";
+import PageHeading from "../components/PageHeading";
 
 function Projekte() {
     const renderProjekte = () => {
@@ -23,7 +24,7 @@ function Projekte() {
             </Head>
             <div className="subPageContent">
                 <section className={styles.projekteHeading}>
-                    <h1 className="subH1">{heading.heading}</h1>
+                    <PageHeading text={heading.heading} />
                     <p>{heading.text1}</p>
                 </section>
                 <section className={styles.projekteProjekte}>

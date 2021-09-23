@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import ArrowIcon from "../../components/ArrowIcon";
+import ArrowIcon from "../../components/svgs/ArrowIcon";
 import Tags from "../../components/Tags";
 import styles from "../../styles/SingleProjekt.module.css";
 import { projekte } from "../../public/text_content/projekte";

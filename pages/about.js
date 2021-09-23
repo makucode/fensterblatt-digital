@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { v4 as uuid } from "uuid";
-import styles from "../styles/About.module.css";
+import styles from "../styles/pages/About.module.css";
 import {
     heading,
     about,
@@ -9,6 +9,7 @@ import {
     imgs,
 } from "../public/text_content/aboutContent";
 import Tracker from "../components/about/Tracker";
+import PageHeading from "../components/PageHeading";
 
 //ADD PROP "PRIOTITY" TO IMG FOR FASTER LOAD
 
@@ -28,7 +29,7 @@ function About() {
             </Head>
             <div className={"subPageContent" + " " + styles.aboutContent}>
                 <section className={styles.aboutHeading}>
-                    <h1 className="subH1">{heading.heading}</h1>
+                    <PageHeading text={heading.heading} />
                     <p>{heading.text1}</p>
                 </section>
                 <section className={styles.aboutSection}>

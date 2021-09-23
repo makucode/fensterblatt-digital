@@ -1,16 +1,20 @@
-.SectionHeading {
+.projektItemHeading {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+
+.projektItemHeading div {
     display: flex;
 }
 
-.SectionHeading span {
-    font-size: 5rem;
-    font-weight: 500;
+.projektItemHeading span {
     opacity: 0;
     transform: translateY(50%);
     transition: all 0.5s ease-in-out;
 }
 
-.SectionHeadingIn span {
+.projektItemHeadingIn span {
     display: block;
     opacity: 1;
     transform: translateY(0) rotateX(0);

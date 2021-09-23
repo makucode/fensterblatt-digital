@@ -1,14 +1,15 @@
 .aboutHeading {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .aboutHeading h1 {
-    width: 40%;
+    width: 100%;
+    margin-bottom: 2vh;
 }
 
 .aboutHeading p {
-    width: 50%;
+    width: 100%;
 }
 
 .aboutSection {

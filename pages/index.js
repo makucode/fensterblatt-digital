@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { v4 as uuid } from "uuid";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/pages/Home.module.css";
 import {
     hero,
     about,
@@ -14,10 +14,11 @@ import Separator from "../components/Separator";
 import LeistungenItem from "../components/index/LeistungenItem";
 import ProjektItem from "../components/ProjektItem";
 import FaqItem from "../components/index/FaqItem";
-import ArrowIcon from "../components/ArrowIcon";
-import SectionHeading from "../components/index/SectionHeading";
+import ArrowIcon from "../components/svgs/ArrowIcon";
+import SectionHeading from "../components/SectionHeading";
 import ImgBoxes from "../components/index/ImgBoxes";
 import HeroHeading from "../components/index/HeroHeading";
+import AboutHeading from "../components/index/AboutHeading";
 
 export default function Home() {
     const renderProjects = () => {
@@ -54,7 +55,7 @@ export default function Home() {
                 </section>
                 <section className={styles.indexAbout}>
                     <div className={styles.indexAboutLeft}>
-                        <h3>{about.heading}</h3>
+                        <AboutHeading text={about.heading} />
                         <Link href="/about" passHref>
                             <a className="thin">
                                 <ArrowIcon />

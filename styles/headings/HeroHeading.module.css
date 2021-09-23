@@ -5,12 +5,18 @@
 
 .HeroHeading {
     display: flex;
+    flex-wrap: wrap;
     font-size: 7rem;
     font-weight: 500;
     z-index: 5;
 }
 
+.HeroHeading div {
+    display: flex;
+}
+
 .HeroHeading span {
+    display: block;
     opacity: 0;
     transform: translateY(50%);
     transition: all 0.5s ease-in-out;

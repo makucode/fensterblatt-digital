@@ -1,8 +1,8 @@
 import Link from "next/link";
 import CountUp from "react-countup";
 import { useRef, useState } from "react";
-import useOnScreen from "../hooks/useOnScreen";
-import ArrowIcon from "../ArrowIcon";
+import useOnScreen from "../../hooks/useOnScreen";
+import ArrowIcon from "../svgs/ArrowIcon";
 import styles from "../../styles/about/Tracker.module.css";
 
 function Tracker(props) {

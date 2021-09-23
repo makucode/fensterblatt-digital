@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Tilt from "react-tilt";
 import styles from "../styles/ProjektItem.module.css";
-import ArrowIcon from "./ArrowIcon";
+import ProjektItemHeading from "./ProjektItemHeading";
+import ArrowIcon from "./svgs/ArrowIcon";
 import Tags from "./Tags";
 
 function ProjektItem(props) {
@@ -15,7 +15,7 @@ function ProjektItem(props) {
             }
         >
             <div className={styles.Content}>
-                <h3>{props.heading}</h3>
+                <ProjektItemHeading text={props.heading} />
                 <Tags tags={props.tags} />
                 <Link href={props.href} passHref>
                     <a className="thin">
@@ -24,11 +24,9 @@ function ProjektItem(props) {
                     </a>
                 </Link>
             </div>
-            <Tilt options={{ max: 7, scale: 1 }}>
-                <div className={styles.imgContainer}>
-                    <Image src={props.img} alt={props.alt} />
-                </div>
-            </Tilt>
+            <div className={styles.imgContainer}>
+                <Image src={props.img} alt={props.alt} />
+            </div>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import useOnScreen from "../../hooks/useOnScreen";
-import styles from "../../styles/headings/HeroHeading.module.css";
+import useOnScreen from "../hooks/useOnScreen";
+import styles from "../styles/headings/PageHeading.module.css";
 
-function HeroHeading(props) {
+function PageHeading(props) {
     const heading = useRef();
     const isVisible = useOnScreen(heading);
     const splittedWords = props.text.split(" ");
@@ -34,19 +34,17 @@ function HeroHeading(props) {
     };
 
     return (
-        <div className={styles.HeroHeadingContainer}>
-            <h1
-                className={
-                    styles.HeroHeading +
-                    " " +
-                    (isVisible ? styles.HeroHeadingIn : "")
-                }
-                ref={heading}
-            >
-                {getWords()}
-            </h1>
-        </div>
+        <h1
+            className={
+                styles.PageHeading +
+                " subH1 " +
+                (isVisible ? styles.PageHeadingIn : "")
+            }
+            ref={heading}
+        >
+            {getWords()}
+        </h1>
     );
 }
 
-export default HeroHeading;
+export default PageHeading;
