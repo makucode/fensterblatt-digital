@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Datenschutz.module.css";
+import styles from "../styles/pages/Datenschutz.module.css";
 
 function Datenschutz() {
     return (

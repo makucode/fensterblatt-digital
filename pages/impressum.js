@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Impressum.module.css";
+import styles from "../styles/pages/Impressum.module.css";
 
 function Impressum() {
     return (
