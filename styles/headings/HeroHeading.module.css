@@ -1,0 +1,22 @@
+.HeroHeadingContainer {
+    width: 80%;
+    max-width: 70%;
+}
+
+.HeroHeading {
+    display: flex;
+    font-size: 7rem;
+    font-weight: 500;
+    z-index: 5;
+}
+
+.HeroHeading span {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.HeroHeadingIn span {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -58,3 +58,9 @@
 .Open .Collapsible {
     height: fit-content;
 }
+
+@media only screen and (max-width: 1280px), screen and (orientation: portrait) {
+    .FaqItemContent {
+        width: 100%;
+    }
+}

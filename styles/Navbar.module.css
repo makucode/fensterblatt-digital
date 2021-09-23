@@ -20,5 +20,12 @@
 
 .Navbar svg {
     object-fit: contain;
-    height: 50px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Navbar {
+        width: calc(100% - 20vw);
+        padding: 1rem 10vw;
+    }
 }

@@ -284,3 +284,9 @@ label {
 .thin:hover line {
     opacity: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .page-wrapper {
+        padding: 1rem 10vw; /* seperate for content, navbar, burger btn and footer */
+    }
+}

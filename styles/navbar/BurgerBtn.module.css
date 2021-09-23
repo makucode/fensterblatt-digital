@@ -71,3 +71,9 @@
     position: absolute;
     transform: translateY(0) rotate(-45deg);
 }
+
+@media only screen and (max-width: 600px) {
+    .burgerContainer {
+        right: 10vw;
+    }
+}

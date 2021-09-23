@@ -35,7 +35,11 @@ function Navbar({ isMobile, menuOpen, setMenuOpen }) {
                     <Logo />
                 </a>
             </Link>
-            {!isMobile && <NavbarLinks setMenuOpen={setMenuOpen} />}
+            {!isMobile ? (
+                <NavbarLinks setMenuOpen={setMenuOpen} />
+            ) : (
+                <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            )}
         </nav>
     );
 }
