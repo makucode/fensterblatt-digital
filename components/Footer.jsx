@@ -8,15 +8,15 @@ function Footer() {
     return (
         <footer className={styles.Footer}>
             <div className={styles.FooterLeft}>
-                <Link href="/datenschutz" passHref>
+                <Link scroll={false} href="/datenschutz" passHref>
                     <a>Datenschutz</a>
                 </Link>
-                <Link href="/impressum" passHref>
+                <Link scroll={false} href="/impressum" passHref>
                     <a>Impressum</a>
                 </Link>
             </div>
             <div className={styles.FooterRight}>
-                <Link href="/" passHref>
+                <Link scroll={false} href="/" passHref>
                     <a>
                         <Logo />
                     </a>

@@ -17,7 +17,7 @@ function Tracker(props) {
                 {props.heading}
             </h3>
             <p>{props.text1}</p>
-            <Link href={props.link1} passHref>
+            <Link scroll={false} href={props.link1} passHref>
                 <a className="thin">
                     <div className="arrow"></div>
                     <ArrowIcon />

@@ -45,13 +45,15 @@ const Scroller = ({ children }) => {
             const velocity = +acceleration;
             const skew = velocity * 7.5;
 
-            scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px)`; //FOR SKEW skewY(${skew}deg)
+            scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px)`;
 
             requestAnimationFrame(() => skewScrolling());
         };
 
-        requestAnimationFrame(() => skewScrolling());
-    }, [width]);
+        setTimeout(() => {
+            requestAnimationFrame(() => skewScrolling());
+        }, 500);
+    }, [width, children]);
 
     return (
         <div ref={app} className={styles.scroller}>

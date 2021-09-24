@@ -30,7 +30,7 @@ function Navbar({ isMobile, menuOpen, setMenuOpen }) {
 
     return (
         <nav className={styles.Navbar + (!showNav ? " " + styles.Hidden : "")}>
-            <Link href="/" passHref>
+            <Link scroll={false} href="/" passHref>
                 <a>
                     <Logo />
                 </a>

@@ -11,7 +11,7 @@ const NavbarLinks = ({ setMenuOpen }) => {
 
     const getLinks = () => {
         return pages.map((page) => (
-            <Link key={page} passHref href={"/" + page}>
+            <Link scroll={false} key={page} passHref href={"/" + page}>
                 <a
                     className={
                         styles.NavbarLink +

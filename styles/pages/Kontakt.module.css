@@ -1,10 +1,18 @@
 .kontakt {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .kontaktInfo {
     width: 33%;
+}
+
+.kontaktInfo a {
+    font-family: "ClashDisplay";
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
 }
 
 .kontaktInfo p {

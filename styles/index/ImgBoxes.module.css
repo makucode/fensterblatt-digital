@@ -1,18 +1,20 @@
 .indexHeroBoxes {
     display: flex;
     position: fixed;
-    top: 25vh;
+    top: 16vh;
     right: 20vw;
 }
 
 .indexHeroBoxes div {
-    transition: all ease 0.2s;
+    transition: all ease 0.5s;
+    border-radius: 7px;
 }
 
 .indexHeroBoxes img {
     display: block;
     width: 8vw;
     margin-left: 20px !important;
+    border-radius: 7px;
 }
 
 .indexHeroBoxes:nth-child(2) {
