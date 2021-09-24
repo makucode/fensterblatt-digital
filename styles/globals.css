@@ -172,6 +172,7 @@ a {
 button {
     font-family: "Montserrat";
     font-weight: 400;
+    height: 64px !important;
 }
 
 ul {
