@@ -13,7 +13,7 @@
 .indexAbout {
     display: flex;
     justify-content: flex-start;
-    margin-top: 22vh;
+    margin-top: 24vh;
 }
 
 .indexAboutLeft {
@@ -65,11 +65,31 @@
     margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 1024px), screen and (orientation: portrait) {
+@media only screen and (min-width: 1921px) {
+    .indexAbout {
+        margin-top: 28vh;
+    }
+}
+
+@media only screen and (max-width: 1280px), screen and (orientation: portrait) {
     .LeistungenItems {
         display: flex;
         justify-content: center;
         margin-top: 4vh;
         flex-wrap: wrap;
+    }
+
+    .indexAbout {
+        flex-direction: column;
+    }
+
+    .indexAboutLeft {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3vh;
+    }
+
+    .indexAbout p {
+        width: 100%;
     }
 }

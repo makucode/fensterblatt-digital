@@ -1,6 +1,6 @@
 .HeroHeadingContainer {
     width: 80%;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .HeroHeading {
@@ -25,4 +25,15 @@
 .HeroHeadingIn span {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media only screen and (max-width: 1920px) {
+    .HeroHeadingContainer {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .HeroHeading {
+        font-size: 6rem;
+    }
 }

@@ -25,9 +25,11 @@ function ProjektItem(props) {
                     </a>
                 </Link>
             </div>
-            <div className={styles.imgContainer}>
-                <Image src={props.img} alt={props.alt} />
-            </div>
+            <Link scroll={false} href={props.href} passHref>
+                <div className={styles.imgContainer}>
+                    <Image src={props.img} alt={props.alt} />
+                </div>
+            </Link>
         </div>
     );
 }

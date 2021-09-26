@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/navbar/MobileMenu.module.css";
+import BurgerBtn from "./BurgerBtn";
 import NavbarLinks from "./NavbarLinks";
 
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
@@ -9,7 +10,10 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 styles.mobileMenu + (menuOpen ? " " + styles.menuOpen : "")
             }
         >
-            <NavbarLinks setMenuOpen={setMenuOpen} />
+            <div className={styles.mobileMenuLinks}>
+                <NavbarLinks setMenuOpen={setMenuOpen} />
+            </div>
+            <BurgerBtn menuOpen={true} setMenuOpen={setMenuOpen} />
         </div>
     );
 };

@@ -25,7 +25,7 @@ const ImgBoxes = () => {
             <div
                 style={{
                     transform: `translateY(${
-                        offsetY ? offsetY * 0.4 + 80 : 80
+                        offsetY ? offsetY * 0.4 + 140 : 140
                     }px)`,
                 }}
             >
@@ -41,7 +41,7 @@ const ImgBoxes = () => {
             <div
                 style={{
                     transform: `translateY(${
-                        offsetY ? offsetY * 0.5 + 160 : 160
+                        offsetY ? offsetY * 0.5 + 280 : 280
                     }px)`,
                 }}
             >

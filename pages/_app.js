@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps, router }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
-        if (height / width >= 1 || width <= 1024) {
+        if (height / width >= 1 || width <= 1280) {
             setIsMobile(true);
         } else {
             setIsMobile(false);
@@ -50,13 +50,10 @@ function MyApp({ Component, pageProps, router }) {
                 menuOpen={menuOpen}
                 setMenuOpen={setMenuOpen}
             />
+            {isMobile && (
+                <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            )}
             <Scroller>
-                {isMobile && (
-                    <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                )}
-                {isMobile && (
-                    <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                )}
                 <AnimatePresence
                     exitBeforeEnter
                     onExitComplete={() => window.scrollTo(0, 0)}

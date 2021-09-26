@@ -293,7 +293,7 @@ label {
 
 .bold:hover svg,
 .thin:hover svg {
-    transform: translateX(-29px);
+    transform: translateX(-27px);
 }
 
 .bold:hover svg line,
@@ -303,7 +303,7 @@ label {
 
 .bold:hover:before,
 .thin:hover:before {
-    min-width: calc(100%);
+    min-width: calc(100% - 3px);
 }
 
 @media only screen and (max-width: 600px) {

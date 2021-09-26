@@ -34,6 +34,7 @@
 .imgContainer {
     width: 68%;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .ProjektItem img {
@@ -47,8 +48,8 @@
     overflow: visible !important;
 }
 
-.ProjektItem:hover img {
-    transform: scale(1.025);
+.imgContainer:hover img {
+    transform: scale(0.975);
 }
 
 @media only screen and (max-width: 1024px), screen and (orientation: portrait) {

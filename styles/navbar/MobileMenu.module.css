@@ -2,10 +2,9 @@
     height: 100vh;
     width: 100vw;
     background-color: #eeeeee;
-    display: block;
     position: fixed;
     top: 0;
-    bottom: 0;
+    left: 0;
     z-index: 120;
     display: flex;
     align-items: center;
@@ -17,12 +16,21 @@
     transform: translateX(0);
 }
 
-.mobileMenu div {
+.mobileMenuLinks {
+    width: calc(100% - 20vw);
+    padding-right: 20vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobileMenuLinks div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    height: 30%;
+    height: 40%;
     width: 100%;
     padding-right: 20vw;
     font-size: 2rem;
