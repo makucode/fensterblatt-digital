@@ -1,21 +1,15 @@
-.aboutHeading {
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutHeading h1 {
-    width: 100%;
-    margin-bottom: 2vh;
-}
-
-.aboutHeading p {
-    width: 100%;
-}
-
 .aboutSection {
     display: flex;
     justify-content: space-between;
     margin-top: 10vh;
+}
+
+.aboutSection h1 {
+    margin-bottom: 4vh;
+}
+
+.aboutSection h2 {
+    margin-bottom: 1vh;
 }
 
 .aboutSection p {
@@ -23,23 +17,63 @@
 }
 
 .aboutInfo {
-    order: 1;
-    width: 50%;
+    order: 0;
+    width: 46%;
 }
 
-.aboutInfo h2 {
-    font-size: 4.3rem;
-    font-weight: 500;
+.aboutQuote {
+    margin-top: 4vh;
+}
+
+.aboutQuote p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.aboutQuote span {
+    color: #636363;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-top: 1.5vh;
 }
 
 .aboutInfoImg {
-    width: 40%;
-    max-height: 500px;
+    width: 50%;
+    max-height: 740px;
     overflow: hidden;
+    border-radius: 7px;
 }
 
-.aboutTrackerImg {
-    width: 50%;
-    max-height: 700px;
-    overflow: hidden;
+.aboutUmweltschutz {
+    width: 60%;
+}
+
+.aboutTracker {
+    width: 33%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .aboutSection {
+        flex-direction: column;
+    }
+
+    .aboutInfo {
+        width: 100%;
+    }
+
+    .aboutInfoImg {
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .aboutUmweltschutz {
+        width: 100%;
+    }
+
+    .aboutTracker {
+        width: 100%;
+        margin-top: 10vh;
+    }
 }

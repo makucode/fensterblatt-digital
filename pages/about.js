@@ -5,6 +5,7 @@ import styles from "../styles/pages/About.module.css";
 import {
     heading,
     about,
+    umweltschutz,
     tracker,
     imgs,
 } from "../public/text_content/aboutContent";
@@ -28,26 +29,39 @@ function About() {
                 />
                 <link scroll={false} rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={"subPageContent" + " " + styles.aboutContent}>
-                <section className={styles.aboutHeading}>
-                    <PageHeading text={heading.heading} />
-                    <p>{heading.text1}</p>
-                </section>
+            <div className={"subPageContent"}>
                 <section className={styles.aboutSection}>
                     <div className={styles.aboutInfo}>
-                        <PageSubHeading text={about.heading} size="4.3rem" />
-                        <p>{about.text1}</p>
+                        <PageHeading text={about.heading} />
+                        <p>
+                            {about.text1}
+                            <br />
+                            {about.text2}
+                        </p>
+                        <div className={styles.aboutQuote}>
+                            <p>{about.aboutText1}</p>
+                            <span>{about.aboutAuthor1}</span>
+                        </div>
+                        <div className={styles.aboutQuote}>
+                            <p>{about.aboutText2}</p>
+                            <span>{about.aboutAuthor2}</span>
+                        </div>
                     </div>
                     <div className={styles.aboutInfoImg}>
                         <Image src={imgs[0].img} alt={imgs[0].alt} />
                     </div>
                 </section>
                 <section className={styles.aboutSection}>
+                    <div className={styles.aboutUmweltschutz}>
+                        <PageSubHeading
+                            text={umweltschutz.heading}
+                            size="3.5rem"
+                        />
+                        <p>{umweltschutz.text1}</p>
+                        <p>{umweltschutz.text2}</p>
+                    </div>
                     <div className={styles.aboutTracker}>
                         {renderTrackers()}
-                    </div>
-                    <div className={styles.aboutTrackerImg}>
-                        <Image src={imgs[1].img} alt={imgs[1].alt} />
                     </div>
                 </section>
             </div>

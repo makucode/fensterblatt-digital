@@ -38,6 +38,11 @@ function KontaktPage() {
                     <div className={styles.kontaktInfo}>
                         <PageHeading text={info.heading} />
                         <p>{info.text1}</p>
+                        <span className={styles.Tel}>
+                            <a href="mailto:kontakt@fensterblatt.digital">
+                                0511 - 3354372
+                            </a>
+                        </span>
                         <span className={styles.Mail}>
                             <a href="mailto:kontakt@fensterblatt.digital">
                                 kontakt@fensterblatt.digital

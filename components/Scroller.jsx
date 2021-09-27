@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import styles from "../styles/Scroller.module.css";
 
-const Scroller = ({ children }) => {
+const Scroller = ({ children, isMobile }) => {
     const { width, height } = useWindowDimensions();
 
     const app = useRef();

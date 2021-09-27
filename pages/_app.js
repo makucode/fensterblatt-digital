@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps, router }) {
             {isMobile && (
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             )}
-            <Scroller>
+            <Scroller isMobile={isMobile}>
                 <AnimatePresence
                     exitBeforeEnter
                     onExitComplete={() => window.scrollTo(0, 0)}
