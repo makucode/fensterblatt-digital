@@ -22,6 +22,8 @@ import AboutHeading from "../components/index/AboutHeading";
 import KontaktMail from "../components/index/KontaktMail";
 
 export default function Home() {
+    const curHero = Math.floor(Math.random() * 4);
+
     const renderProjects = () => {
         return projekte.projekte.map((projekt, idx) => (
             <ProjektItem key={uuid()} index={idx} {...projekt} />
@@ -44,7 +46,7 @@ export default function Home() {
             </Head>
             <div className={styles.indexContent}>
                 <section className={styles.indexHero}>
-                    <ImgBoxes />
+                    <ImgBoxes cur={curHero} />
                     <HeroHeading text={hero.heading} />
                     <p className={styles.headingHeroSub}>{hero.text1}</p>
                     <Link scroll={false} href="/kontakt" passHref>

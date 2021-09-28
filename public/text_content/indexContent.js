@@ -38,7 +38,13 @@ export const projekte = {
     projekte: [
         {
             heading: "Mediation von Berg",
-            tags: ["Webdevelopment", "Webdesign", "Fotografie", "Branding"],
+            tags: [
+                "Webdevelopment",
+                "SEO",
+                "Webdesign",
+                "Fotografie",
+                "Corporate Design",
+            ],
             img: projektVonBerg,
             alt: 'Screenshot der Internetseite von "Mediation von Berg"',
             align: "left",
@@ -46,7 +52,7 @@ export const projekte = {
         },
         {
             heading: "Meta-objects",
-            tags: ["Webdesign", "Fotografie", "Branding"],
+            tags: ["Webdesign", "Fotografie", "Corporate Design"],
             img: projektVonBerg,
             alt: "", //INSERT!!!
             align: "right",

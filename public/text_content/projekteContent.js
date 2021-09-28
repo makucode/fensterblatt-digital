@@ -8,28 +8,34 @@ export const heading = {
 export const projekte = [
     {
         heading: "Mediation von Berg",
-        tags: ["Webdesign", "Webentwicklung", "Branding", "Fotografie"],
+        tags: [
+            "Webdevelopment",
+            "SEO",
+            "Webdesign",
+            "Fotografie",
+            "Corporate Design",
+        ],
         img: projektVonBerg,
         alt: 'Screenshot der Internetseite von "Mediation von Berg"',
         href: "/projekte/mediation-vonberg",
     },
     {
         heading: "Meta-objects",
-        tags: ["Webdesign", "Branding", "Fotografie"],
+        tags: ["Webdesign", "Corporate Design", "Fotografie"],
         img: projektVonBerg,
         alt: "", //INSERT!!!
         href: "/projekte/meta-objects",
     },
     {
         heading: "Mediation von Berg",
-        tags: ["Webdesign", "Webentwicklung", "Branding", "Fotografie"],
+        tags: ["Webdesign", "Webentwicklung", "Corporate Design", "Fotografie"],
         img: projektVonBerg,
         alt: "", //INSERT!!!
         href: "/projekte/mediation-vonberg",
     },
     {
         heading: "Meta-objects",
-        tags: ["Webdesign", "Branding", "Fotografie"],
+        tags: ["Webdesign", "Corporate Design", "Fotografie"],
         img: projektVonBerg,
         alt: "", //INSERT!!!
         href: "/projekte/meta-objects",

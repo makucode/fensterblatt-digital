@@ -14,7 +14,7 @@ import boxImage11 from "../../public/imgs/hero/4b.png";
 import boxImage12 from "../../public/imgs/hero/4c.png";
 import styles from "../../styles/index/ImgBoxes.module.css";
 
-const ImgBoxes = () => {
+const ImgBoxes = ({ cur }) => {
     const imgs = [
         [boxImage1, boxImage2, boxImage3],
         [boxImage4, boxImage5, boxImage6],
@@ -22,7 +22,7 @@ const ImgBoxes = () => {
         [boxImage10, boxImage11, boxImage12],
     ];
 
-    const boxImgs = imgs[Math.floor(Math.random() * imgs.length)];
+    const boxImgs = imgs[cur];
 
     const [offsetY, setOffsetY] = useState(0);
 

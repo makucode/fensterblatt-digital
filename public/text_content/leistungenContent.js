@@ -45,7 +45,7 @@ export const items = [
         tags: [
             "SEO",
             "SEM",
-            "Branding",
+            "Corporate Design",
             "Social Media",
             "Instagram",
             "Facebook",
