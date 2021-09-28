@@ -1,4 +1,6 @@
-import marketingImg from "../imgs/leistungen_marketing.svg";
+import marketingIllustration from "../imgs/marketing.png";
+import entwicklungIllustration from "../imgs/entwicklung.png";
+import designIllustration from "../imgs/design.png";
 
 export const heading = {
     heading: "Leistungen",
@@ -7,7 +9,7 @@ export const heading = {
 
 export const items = [
     {
-        img: marketingImg,
+        img: entwicklungIllustration,
         alt: "Illustration für Entwicklung",
         heading: "Entwicklung",
         text1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
@@ -22,7 +24,7 @@ export const items = [
         ],
     },
     {
-        img: marketingImg,
+        img: designIllustration,
         alt: "Illustration für Design",
         heading: "Design",
         text1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
@@ -36,7 +38,7 @@ export const items = [
         ],
     },
     {
-        img: marketingImg,
+        img: marketingIllustration,
         alt: "Illustration für Marketing",
         heading: "Marketing",
         text1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",

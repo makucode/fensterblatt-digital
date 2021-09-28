@@ -1,4 +1,4 @@
-import placeholderImg from "../../public/imgs/placeholder.webp";
+import aboutImg from "../../public/imgs/about-us.jpg";
 
 export const heading = {
     heading: "Fensterblatt Webdesign",
@@ -48,7 +48,7 @@ export const tracker = [
     },
 ];
 
-export const imgs = [
-    { img: placeholderImg, alt: "BESCHREIBUNG" },
-    { img: placeholderImg, alt: "BESCHREIBUNG" },
-];
+export const img = {
+    img: aboutImg,
+    alt: "Das Team von Fensterblatt Digital im Grünen",
+};

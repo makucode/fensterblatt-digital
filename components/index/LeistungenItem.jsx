@@ -8,8 +8,8 @@ function LeistungenItem(props) {
                 <Image
                     src={props.img.src}
                     alt={props.alt}
-                    width="162px"
-                    height="162px"
+                    width="180px"
+                    height="180px"
                 />
             </div>
             <h3>{props.heading}</h3>

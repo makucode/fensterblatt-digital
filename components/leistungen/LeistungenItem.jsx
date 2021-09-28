@@ -15,8 +15,8 @@ function LeistungenItem(props) {
                 <Image
                     src={props.img}
                     alt={props.alt}
-                    width="230px"
-                    height="230px"
+                    width="250px"
+                    height="250px"
                 />
             </div>
             <div className={styles.itemInfo}>

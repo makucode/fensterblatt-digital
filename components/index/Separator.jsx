@@ -1,4 +1,4 @@
-import styles from "../styles/Separator.module.css";
+import styles from "../../styles/index/Separator.module.css";
 
 function Separator() {
     return <div className={styles.Separator}></div>;

@@ -1,4 +1,6 @@
-import leistungenIcon from "../imgs/leistungen_marketing.svg";
+import marketingIllustration from "../imgs/marketing.png";
+import entwicklungIllustration from "../imgs/entwicklung.png";
+import designIllustration from "../imgs/design.png";
 import projektVonBerg from "../imgs/projekt_mediation_vonberg.png";
 
 export const hero = {
@@ -21,8 +23,12 @@ export const leistungen = {
     text1: "Landing-Page, Online-Shop oder Wordpress-Blog, wir entwickeln Ihnen die passende digitale Lösung.", //CHECK
     text2: "Falls Sie für Ihr Unternehmen ein neues Erscheinungsbild inklusive Logo, Visitenkarten und Fotos brauchen, sind Sie hier richtig.",
     text3: "Wir sorgen dafür, dass Ihre Seite bei Google auftaucht und kümmern uns auch gerne um Ihre Social Media Präsenz.", //CHECK
-    img1: leistungenIcon,
-    alt1: "Marketing Illustration", //INSERT!!!
+    img1: entwicklungIllustration,
+    img2: designIllustration,
+    img3: marketingIllustration,
+    alt1: "Entwicklungs Illustration",
+    alt2: "Design Illustration",
+    alt3: "Marketing Illustration",
     linkText1: "Mehr zu unseren Leistungen",
 };
 

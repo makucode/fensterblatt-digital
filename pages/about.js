@@ -3,17 +3,14 @@ import Image from "next/image";
 import { v4 as uuid } from "uuid";
 import styles from "../styles/pages/About.module.css";
 import {
-    heading,
     about,
     umweltschutz,
     tracker,
-    imgs,
+    img,
 } from "../public/text_content/aboutContent";
 import Tracker from "../components/about/Tracker";
 import PageHeading from "../components/PageHeading";
 import PageSubHeading from "../components/PageSubHeading";
-
-//ADD PROP "PRIOTITY" TO IMG FOR FASTER LOAD
 
 function About() {
     const renderTrackers = () => {
@@ -48,7 +45,7 @@ function About() {
                         </div>
                     </div>
                     <div className={styles.aboutInfoImg}>
-                        <Image src={imgs[0].img} alt={imgs[0].alt} />
+                        <Image src={img.img} alt={img.alt} priority />
                     </div>
                 </section>
                 <section className={styles.aboutSection}>

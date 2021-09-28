@@ -10,7 +10,7 @@ import {
     faq,
     kontakt,
 } from "../public/text_content/indexContent";
-import Separator from "../components/Separator";
+import Separator from "../components/index/Separator";
 import LeistungenItem from "../components/index/LeistungenItem";
 import ProjektItem from "../components/ProjektItem";
 import FaqItem from "../components/index/FaqItem";
@@ -88,14 +88,14 @@ export default function Home() {
                         <LeistungenItem
                             heading={leistungen.subHeading2}
                             text={leistungen.text2}
-                            img={leistungen.img1}
-                            alt={leistungen.alt1}
+                            img={leistungen.img2}
+                            alt={leistungen.alt2}
                         />
                         <LeistungenItem
                             heading={leistungen.subHeading3}
                             text={leistungen.text3}
-                            img={leistungen.img1}
-                            alt={leistungen.alt1}
+                            img={leistungen.img3}
+                            alt={leistungen.alt3}
                         />
                     </div>
                 </section>

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/imgs/logo_schwarz.png";
 import styles from "../styles/Footer.module.css";
 import Logo from "./Logo";
 
