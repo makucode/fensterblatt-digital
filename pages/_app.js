@@ -69,9 +69,9 @@ function MyApp({ Component, pageProps, router }) {
                         <div className="page-wrapper">
                             <Component {...pageProps} />
                         </div>
+                        <Footer />
                     </motion.div>
                 </AnimatePresence>
-                <Footer />
             </Scroller>
         </>
     );

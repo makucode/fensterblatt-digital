@@ -72,6 +72,10 @@
 }
 
 @media only screen and (max-width: 1280px), screen and (orientation: portrait) {
+    .headingHeroSub {
+        width: 100%;
+    }
+
     .LeistungenItems {
         display: flex;
         justify-content: center;

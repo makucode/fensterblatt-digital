@@ -37,3 +37,10 @@
         font-size: 6rem;
     }
 }
+
+@media only screen and (max-width: 1280px), screen and (orientation: portrait) {
+    .HeroHeadingContainer {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -40,11 +40,6 @@ const Scroller = ({ children, isMobile }) => {
                 (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
             skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
 
-            const difference = skewConfigs.current - skewConfigs.rounded;
-            const acceleration = difference / width;
-            const velocity = +acceleration;
-            const skew = velocity * 7.5;
-
             scrollContainer.current.style.transform = `translateY(-${skewConfigs.rounded}px)`;
 
             requestAnimationFrame(() => skewScrolling());
@@ -53,7 +48,7 @@ const Scroller = ({ children, isMobile }) => {
         setTimeout(() => {
             requestAnimationFrame(() => skewScrolling());
         }, 500);
-    }, [width, children]);
+    }, [width, children, isMobile]);
 
     return (
         <div ref={app} className={styles.scroller}>
