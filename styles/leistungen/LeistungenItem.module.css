@@ -43,3 +43,21 @@
 .reverse .itemInfo {
     order: 1;
 }
+
+@media only screen and (max-width: 1280px) {
+    .leistungenItem {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8vh;
+    }
+
+    .itemImg {
+        width: 60%;
+        order: 1 !important;
+    }
+
+    .itemInfo {
+        width: 100%;
+        order: 0 !important;
+    }
+}

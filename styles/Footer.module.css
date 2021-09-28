@@ -27,6 +27,7 @@
 .FooterRight {
     width: 180px;
     min-width: 180px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {

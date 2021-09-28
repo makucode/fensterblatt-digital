@@ -13,7 +13,6 @@ import boxImage10 from "../../public/imgs/hero/4a.png";
 import boxImage11 from "../../public/imgs/hero/4b.png";
 import boxImage12 from "../../public/imgs/hero/4c.png";
 import styles from "../../styles/index/ImgBoxes.module.css";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ImgBoxes = () => {
     const imgs = [
@@ -23,10 +22,9 @@ const ImgBoxes = () => {
         [boxImage10, boxImage11, boxImage12],
     ];
 
+    const boxImgs = imgs[Math.floor(Math.random() * imgs.length)];
+
     const [offsetY, setOffsetY] = useState(0);
-    const [boxImgs, setBoxImgs] = useState(
-        imgs[Math.floor(Math.random() * imgs.length)]
-    );
 
     useEffect(() => {
         const handleScroll = () => {

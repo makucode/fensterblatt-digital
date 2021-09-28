@@ -13,12 +13,11 @@ function Footer() {
                     <a>Impressum</a>
                 </Link>
             </div>
-            <div className={styles.FooterRight}>
-                <Link scroll={false} href="/" passHref>
-                    <a>
-                        <Logo />
-                    </a>
-                </Link>
+            <div
+                className={styles.FooterRight}
+                onClick={() => window.scrollTo(0, 0)}
+            >
+                <Logo />
             </div>
         </footer>
     );
