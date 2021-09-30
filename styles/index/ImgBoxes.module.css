@@ -1,9 +1,20 @@
 .indexHeroBoxes {
     display: flex;
     position: fixed;
-    top: 14vh;
+    top: 13vh;
     right: 20vw;
-    animation: boxesIn ease-in-out 1s forwards;
+}
+
+.heroBox1 {
+    animation: box1In ease-out 0.9s;
+}
+
+.heroBox2 {
+    animation: box2In ease-out 1s;
+}
+
+.heroBox3 {
+    animation: box3In ease-out 0.8s;
 }
 
 .indexHeroBoxes div {
@@ -18,17 +29,35 @@
     border-radius: 7px;
 }
 
-.indexHeroBoxes:nth-child(2) {
-    margin-top: -10px;
+@keyframes box1In {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(160px);
+        opacity: 1;
+    }
 }
 
-@keyframes boxesIn {
+@keyframes box2In {
     from {
         transform: translateY(-100%);
         opacity: 0;
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes box3In {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(320px);
         opacity: 1;
     }
 }

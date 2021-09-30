@@ -39,6 +39,7 @@ const ImgBoxes = ({ cur }) => {
     return (
         <div className={styles.indexHeroBoxes}>
             <div
+                className={styles.heroBox1}
                 style={{
                     transform: `translateY(${
                         offsetY ? offsetY * 0.4 + 160 : 160
@@ -48,6 +49,7 @@ const ImgBoxes = ({ cur }) => {
                 <Image src={boxImgs[0]} alt="Foto von einer Pflanze" priority />
             </div>
             <div
+                className={styles.heroBox2}
                 style={{
                     transform: `translateY(${offsetY * 0.3}px)`,
                 }}
@@ -55,6 +57,7 @@ const ImgBoxes = ({ cur }) => {
                 <Image src={boxImgs[1]} alt="Foto von einer Pflanze" priority />
             </div>
             <div
+                className={styles.heroBox3}
                 style={{
                     transform: `translateY(${
                         offsetY ? offsetY * 0.5 + 320 : 320
