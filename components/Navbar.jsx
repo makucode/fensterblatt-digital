@@ -6,17 +6,8 @@ import Logo from "./Logo";
 import NavbarLinks from "./navbar/NavbarLinks";
 import BurgerBtn from "./navbar/BurgerBtn";
 
-function Navbar({ isMobile, menuOpen, setMenuOpen }) {
-    const {
-        isScrolling,
-        isScrollingX,
-        isScrollingY,
-        isScrollingUp,
-        isScrollingDown,
-        isScrollingLeft,
-        isScrollingRight,
-        scrollDirection,
-    } = useScrollDirection();
+function Navbar({ isMobile, setMenuOpen }) {
+    const { scrollDirection } = useScrollDirection();
 
     const [showNav, setShowNav] = useState(true);
 

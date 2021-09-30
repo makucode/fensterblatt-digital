@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps, router }) {
     };
 
     const { height, width } = useWindowDimensions();
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(true);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -45,11 +45,7 @@ function MyApp({ Component, pageProps, router }) {
 
     return (
         <>
-            <Navbar
-                isMobile={isMobile}
-                menuOpen={menuOpen}
-                setMenuOpen={setMenuOpen}
-            />
+            <Navbar isMobile={isMobile} setMenuOpen={setMenuOpen} />
             {isMobile && (
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             )}
