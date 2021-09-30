@@ -1,12 +1,12 @@
 .HeroHeadingContainer {
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
 }
 
 .HeroHeading {
     display: flex;
     flex-wrap: wrap;
-    font-size: 7rem;
+    font-size: 9rem;
     font-weight: 500;
     z-index: 5;
 }
@@ -29,12 +29,12 @@
 
 @media only screen and (max-width: 1920px) {
     .HeroHeadingContainer {
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .HeroHeading {
-        font-size: 6rem;
+        font-size: 7rem;
     }
 }
 

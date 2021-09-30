@@ -76,4 +76,7 @@
     .burgerContainer {
         right: 10vw;
     }
+    .burgerBtn {
+        margin-top: 0;
+    }
 }

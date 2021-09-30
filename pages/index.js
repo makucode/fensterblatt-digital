@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 import styles from "../styles/pages/Home.module.css";
 import {
@@ -23,7 +23,11 @@ import AboutHeading from "../components/index/AboutHeading";
 import KontaktMail from "../components/index/KontaktMail";
 
 export default function Home() {
-    const [curHero] = useState(Math.floor(Math.random() * 4));
+    const [curHero, setCurHero] = useState(Math.floor(Math.random() * 4));
+
+    useEffect(() => {
+        setCurHero(Math.floor(Math.random() * 4));
+    }, []);
 
     const renderProjects = () => {
         return projekte.projekte.map((projekt, idx) => (
