@@ -53,11 +53,12 @@
 
     .itemImg {
         width: 60%;
-        order: 1 !important;
+        order: 0 !important;
+        margin-bottom: 5vh;
     }
 
     .itemInfo {
         width: 100%;
-        order: 0 !important;
+        order: 1 !important;
     }
 }

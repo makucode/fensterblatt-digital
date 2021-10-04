@@ -38,6 +38,10 @@
     flex-wrap: wrap;
 }
 
+.LeistungenItems > div:nth-of-type(1) {
+    margin-bottom: 11vh;
+}
+
 /* PROJEKTE */
 
 /* FAQ */
@@ -76,11 +80,19 @@
         width: 100%;
     }
 
+    .indexAbout {
+        margin-top: 14vh;
+    }
+
     .LeistungenItems {
         display: flex;
         justify-content: center;
         margin-top: 4vh;
         flex-wrap: wrap;
+    }
+
+    .LeistungenItems > div:nth-of-type(1) {
+        margin-bottom: 0;
     }
 
     .indexAbout {

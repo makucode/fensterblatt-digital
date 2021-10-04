@@ -1,9 +1,10 @@
 .LeistungenItem {
-    width: 25%;
+    width: 26%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .leistungenImg {
@@ -13,27 +14,28 @@
 
 .LeistungenItem h3 {
     font-size: 2.1rem;
-    text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
 .LeistungenItem p {
-    text-align: left;
+    font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1280px), screen and (orientation: portrait) {
     .LeistungenItem h3 {
         font-size: 2.1rem;
-        text-align: center;
         margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
 
     .LeistungenItem {
+        width: 100%;
+        margin-top: 7vh;
+    }
+
+    .LeistungenItem p {
         width: 70%;
-        text-align: center;
-        margin-top: 5vh;
     }
 }
 

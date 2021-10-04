@@ -1,4 +1,4 @@
-import aboutImg from "../../public/imgs/about-us.jpg";
+import aboutImg from "../../public/imgs/about-us-team.jpg";
 
 export const heading = {
     heading: "Fensterblatt Webdesign",
@@ -7,8 +7,8 @@ export const heading = {
 
 export const about = {
     heading: "Wer wir sind",
-    text1: "Wir, ein Team von zwei Technikbegeisterten aus Hannover, haben Fensterblatt Digital mit dem Ziel gegründet, die digitale Welt um uns herum etwas schöner zu gestalten.",
-    text2: "Als Media & Interaction Designer und Programmierer ergänzen wir uns ideal, was eine kreative, flexible und schnelle Umsetzung Ihres Projekts ermöglicht. Hierbei steht für uns an erster Stelle, auf Ihre individuellen Wünsche und Anforderungen einzugehen, um eine einzigartige und optimierte digitale Lösung anbieten zu können.",
+    text1: "Wir, zwei Design- und Technikbegeisterte aus Hannover, haben Fensterblatt Digital mit dem Ziel gegründet, die digitale Welt um uns herum etwas schöner zu gestalten.",
+    text2: "Als Media & Interaction Designer und Programmierer ergänzen wir uns ideal, wodurch wir kreativ, flexibel und schnell an der Umsetzung Ihres Projekts arbeiten können. Hierbei steht für uns an erster Stelle, auf Ihre individuellen Wünsche und Anforderungen einzugehen, um so  eine einzigartige und passgenaue Lösung entwickeln zu können.",
     aboutText1:
         "Ich setze mich gerne solange mit Projekten auseinander, bis eine Lösung entsteht, die gut aussieht und Spaß macht.",
     aboutText2:

@@ -33,19 +33,16 @@ function About() {
                         <p>
                             {about.text1}
                             <br />
+                            <br />
                             {about.text2}
                         </p>
-                        <div className={styles.aboutQuote}>
-                            <p>{about.aboutText1}</p>
-                            <span>{about.aboutAuthor1}</span>
-                        </div>
-                        <div className={styles.aboutQuote}>
-                            <p>{about.aboutText2}</p>
-                            <span>{about.aboutAuthor2}</span>
-                        </div>
                     </div>
                     <div className={styles.aboutInfoImg}>
                         <Image src={img.img} alt={img.alt} priority />
+                        <span className={styles.imgCaption}>
+                            Das dynamische Duo: Maximilian Friedrich und Yuan
+                            Ahn
+                        </span>
                     </div>
                 </section>
                 <section className={styles.aboutSection}>

@@ -10,26 +10,52 @@ export const hero = {
 };
 
 export const about = {
-    heading: "Effizient und Nachhaltig",
-    text1: "Wir bieten hohe Qualität bei bezahlbaren Preisen, da wir ein sehr kleines, aber effizientes Team sind. Ein Punkt der uns außerdem besonders am Herzen liegt ist der Umweltschutz, weshalb wir verschiedene nachhaltige Projekte fördern.",
+    heading: "Qualität und Nachhaltigkeit",
+    text1: "Wir können einzigartige Webseiten zu bezahlbaren Preisen anbieten, da wir ein kleines, effizientes und leidenschaftliches Team sind. Was uns außerdem besonders am Herzen liegt ist der Umweltschutz, weshalb wir verschiedene nachhaltige Projekte fördern.",
     linkText1: "Mehr über uns",
 };
 
 export const leistungen = {
     heading: "Was wir machen",
-    subHeading1: "Entwicklung",
-    subHeading2: "Design",
-    subHeading3: "Marketing",
-    text1: "Landing-Page, Online-Shop oder Wordpress-Blog, wir entwickeln Ihnen die passende digitale Lösung.", //CHECK
-    text2: "Falls Sie für Ihr Unternehmen ein neues Erscheinungsbild inklusive Logo, Visitenkarten und Fotos brauchen, sind Sie hier richtig.",
-    text3: "Wir sorgen dafür, dass Ihre Seite bei Google auftaucht und kümmern uns auch gerne um Ihre Social Media Präsenz.", //CHECK
-    img1: entwicklungIllustration,
-    img2: designIllustration,
-    img3: marketingIllustration,
-    alt1: "Entwicklungs Illustration",
-    alt2: "Design Illustration",
-    alt3: "Marketing Illustration",
     linkText1: "Mehr zu unseren Leistungen",
+    items: [
+        {
+            title: "Strategie",
+            text: "Erstberatung, Webstrategie",
+            img: marketingIllustration,
+            alt: "Illustration für Strategie",
+        },
+        {
+            title: "Webdesign",
+            text: "User Interface Design, User Experience Design",
+            img: designIllustration,
+            alt: "Illustration für Webdesign",
+        },
+        {
+            title: "Webentwicklung",
+            text: "Entwicklung, Administration, Langzeitwartung",
+            img: entwicklungIllustration,
+            alt: "Illustration für Webentwicklung",
+        },
+        {
+            title: "Grafikdesign",
+            text: "Logodesign, Corporate Design, Illustration",
+            img: marketingIllustration,
+            alt: "Illustration für Grafikdesign",
+        },
+        {
+            title: "Bild & Text",
+            text: "Fotografie, Textinhalte",
+            img: marketingIllustration,
+            alt: "Illustration für Bild & Text",
+        },
+        {
+            title: "SEO & SEA",
+            text: "Suchmaschinenoptimierung, Suchmaschinenwerbung",
+            img: marketingIllustration,
+            alt: "Illustration für SEO und SEA",
+        },
+    ],
 };
 
 export const projekte = {

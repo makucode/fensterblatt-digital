@@ -86,24 +86,15 @@ export default function Home() {
                         </a>
                     </Link>
                     <div className={styles.LeistungenItems}>
-                        <LeistungenItem
-                            heading={leistungen.subHeading1}
-                            text={leistungen.text1}
-                            img={leistungen.img1}
-                            alt={leistungen.alt1}
-                        />
-                        <LeistungenItem
-                            heading={leistungen.subHeading2}
-                            text={leistungen.text2}
-                            img={leistungen.img2}
-                            alt={leistungen.alt2}
-                        />
-                        <LeistungenItem
-                            heading={leistungen.subHeading3}
-                            text={leistungen.text3}
-                            img={leistungen.img3}
-                            alt={leistungen.alt3}
-                        />
+                        {leistungen.items.map((item) => (
+                            <LeistungenItem
+                                key={uuid()}
+                                heading={item.title}
+                                text={item.text}
+                                img={item.img}
+                                alt={item.alt}
+                            />
+                        ))}
                     </div>
                 </section>
                 <Separator />
