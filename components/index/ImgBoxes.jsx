@@ -15,6 +15,8 @@ import boxImage12 from "../../public/imgs/hero/4c.png";
 import styles from "../../styles/index/ImgBoxes.module.css";
 
 const ImgBoxes = ({ cur }) => {
+    const [isIn, setIsIn] = useState(false);
+
     const imgs = [
         [boxImage1, boxImage2, boxImage3],
         [boxImage4, boxImage5, boxImage6],
@@ -36,6 +38,12 @@ const ImgBoxes = ({ cur }) => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [offsetY]);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setIsIn(true);
+        }, 200);
+    });
+
     return (
         <div className={styles.indexHeroBoxes}>
             <div
@@ -44,6 +52,7 @@ const ImgBoxes = ({ cur }) => {
                     transform: `translateY(${
                         offsetY ? offsetY * 0.4 + 160 : 160
                     }px)`,
+                    opacity: isIn ? 1 : null,
                 }}
             >
                 <Image src={boxImgs[0]} alt="Foto von einer Pflanze" priority />
@@ -52,6 +61,7 @@ const ImgBoxes = ({ cur }) => {
                 className={styles.heroBox2}
                 style={{
                     transform: `translateY(${offsetY * 0.3}px)`,
+                    opacity: isIn ? 1 : null,
                 }}
             >
                 <Image src={boxImgs[1]} alt="Foto von einer Pflanze" priority />
@@ -62,6 +72,7 @@ const ImgBoxes = ({ cur }) => {
                     transform: `translateY(${
                         offsetY ? offsetY * 0.5 + 320 : 320
                     }px)`,
+                    opacity: isIn ? 1 : null,
                 }}
             >
                 <Image src={boxImgs[2]} alt="Foto von einer Pflanze" priority />

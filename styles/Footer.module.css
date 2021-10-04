@@ -6,6 +6,7 @@
     height: 80px;
     padding: 2rem 20vw;
     background-color: #eeeeee;
+    font-size: 1rem;
 }
 
 .FooterLeft {
@@ -20,7 +21,6 @@
 
 .FooterLeft a {
     color: #000000;
-    font-size: 1.25rem;
     margin-right: 4rem;
 }
 

@@ -21,11 +21,11 @@
 .Navbar svg {
     object-fit: contain;
     height: 40px;
-    transition: all ease-in-out 0.15s;
+    transition: all ease 0.2s;
 }
 
 .Navbar svg:hover {
-    fill: #024a44;
+    fill: #53dd6c;
 }
 
 @media only screen and (max-width: 600px) {
