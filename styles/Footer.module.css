@@ -42,16 +42,16 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .Footer {
         width: calc(100% - 20vw);
         padding: 2rem 10vw;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
     .FooterRight {
         width: 120px;
         min-width: 120px;

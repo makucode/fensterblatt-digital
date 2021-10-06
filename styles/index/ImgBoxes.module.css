@@ -6,17 +6,17 @@
 }
 
 .heroBox1 {
-    animation: box1In ease-out 0.5s 0.1s;
+    animation: box1In cubic-bezier(0.19, 0.77, 0.38, 1) 0.7s 0.1s;
     opacity: 0;
 }
 
 .heroBox2 {
-    animation: box2In ease-out 0.6s;
+    animation: box2In cubic-bezier(0.19, 0.77, 0.38, 1) 0.8s;
     opacity: 0;
 }
 
 .heroBox3 {
-    animation: box3In ease-out 0.4s 0.2s;
+    animation: box3In cubic-bezier(0.19, 0.77, 0.38, 1) 0.6s 0.2s;
     opacity: 0;
 }
 

@@ -86,7 +86,7 @@
 
     .LeistungenItems {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 4vh;
         flex-wrap: wrap;
     }
