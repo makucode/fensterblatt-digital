@@ -1,4 +1,5 @@
-import projektVonBerg from "../imgs/projekt_mediation_vonberg.png";
+import projektVonBerg from "../imgs/projekte/projekt_screen_1.png";
+import projektMetaObjects from "../imgs/projekte/projekt_screen_2.png";
 
 export const heading = {
     heading: "Bisherige Projekte",
@@ -22,22 +23,8 @@ export const projekte = [
     {
         heading: "Meta-objects",
         tags: ["Webdesign", "Corporate Design", "Fotografie"],
-        img: projektVonBerg,
-        alt: "", //INSERT!!!
-        href: "/projekte/meta-objects",
-    },
-    {
-        heading: "Mediation von Berg",
-        tags: ["Webdesign", "Webentwicklung", "Corporate Design", "Fotografie"],
-        img: projektVonBerg,
-        alt: "", //INSERT!!!
-        href: "/projekte/mediation-vonberg",
-    },
-    {
-        heading: "Meta-objects",
-        tags: ["Webdesign", "Corporate Design", "Fotografie"],
-        img: projektVonBerg,
-        alt: "", //INSERT!!!
+        img: projektMetaObjects,
+        alt: 'Screenshot der Internetseite von "Meta-Objects"',
         href: "/projekte/meta-objects",
     },
 ];

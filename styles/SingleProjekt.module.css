@@ -12,31 +12,33 @@
 }
 
 .infoContainer {
-    margin-top: 10vh;
+    margin-top: 6vh;
 }
 
 .projektInfo {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .projektInfo1 {
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 
 .projektInfo h2 {
     font-size: 2.8rem;
-    width: 25%;
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .projektInfo p {
-    width: 66%;
+    width: 100%;
 }
 
 .projektTags {
-    width: 66%;
+    width: 100%;
     margin-left: auto;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 .projektImgs {
@@ -50,7 +52,7 @@
 }
 
 .imgContainer {
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 
 .imgContainer div {

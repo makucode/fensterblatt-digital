@@ -1,15 +1,14 @@
-import { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { v4 as uuid } from "uuid";
 import ArrowIcon from "../../components/svgs/ArrowIcon";
 import Tags from "../../components/Tags";
 import styles from "../../styles/SingleProjekt.module.css";
 import { projekte } from "../../public/text_content/projekte";
 
-function SingleProjektPage(props) {
-    const [projekt, setProjekt] = useState(props.projekt);
+function SingleProjektPage({ projekt }) {
     const router = useRouter();
 
     return (
@@ -51,18 +50,20 @@ function SingleProjektPage(props) {
                         <Tags tags={projekt.tags} />
                     </section>
                     <section className={styles.projektImgs}>
-                        <div className={styles.imgContainer}>
-                            <Image src={projekt.img} alt={projekt.alt} />
-                        </div>
-                        <div className={styles.imgContainer}>
-                            <Image src={projekt.img} alt={projekt.alt} />
-                        </div>
+                        {projekt.imgs &&
+                            projekt.imgs.map((img) => (
+                                <div
+                                    key={uuid()}
+                                    className={styles.imgContainer}
+                                >
+                                    <Image src={img.img} alt={img.alt} />
+                                </div>
+                            ))}
                     </section>
                     <section className={styles.link}>
                         <Link scroll={false} href="/projekte" passHref>
                             <a className="thin">
                                 <div className="arrow"></div>
-
                                 <ArrowIcon />
                                 <span>Zurück zur Projektübersicht</span>
                             </a>

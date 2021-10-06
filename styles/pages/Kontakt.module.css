@@ -46,18 +46,15 @@
     margin-left: auto;
 }
 
-.Mail,
-.Tel {
-    display: block;
+.kontaktInfoItems {
     margin-top: 3vh;
+}
+
+.kontaktInfoItems span {
+    display: block;
     margin-bottom: 0.5rem;
     font-size: 1.6rem;
     font-weight: 500;
-}
-
-.Mail {
-    margin-top: 0vh;
-    margin-bottom: 3vh;
 }
 
 @media only screen and (max-width: 1280px) {

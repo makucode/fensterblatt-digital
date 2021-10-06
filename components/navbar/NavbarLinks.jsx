@@ -24,7 +24,7 @@ const NavbarLinks = ({ setMenuOpen }) => {
                     onMouseLeave={() => setIsHovering(false)}
                     onClick={() => setMenuOpen(false)}
                 >
-                    {page}
+                    {page !== "about" ? page : "Über uns"}
                 </a>
             </Link>
         ));

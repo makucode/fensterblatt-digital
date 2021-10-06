@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/pages/Kontakt.module.css";
 import { info, form, link } from "../public/text_content/kontaktContent";
 import { useState } from "react";
 import ArrowIcon from "../components/svgs/ArrowIcon";
-import XingIcon from "../components/kontakt/XingIcon";
 import PageHeading from "../components/PageHeading";
 
 function KontaktPage() {
@@ -38,26 +36,20 @@ function KontaktPage() {
                     <div className={styles.kontaktInfo}>
                         <PageHeading text={info.heading} />
                         <p>{info.text1}</p>
-                        <span className={styles.Tel}>
-                            <a href="mailto:kontakt@fensterblatt.digital">
-                                0511 - 3354372
-                            </a>
-                        </span>
-                        <span className={styles.Mail}>
-                            <a href="mailto:kontakt@fensterblatt.digital">
-                                kontakt@fensterblatt.digital
-                            </a>
-                        </span>
-                        <div className={styles.Icons}>
-                            <Link
-                                scroll={false}
-                                href="https://xing.de"
-                                passHref
-                            >
-                                <a>
-                                    <XingIcon />
+                        <div className={styles.kontaktInfoItems}>
+                            <span>
+                                <a href="mailto:kontakt@fensterblatt.digital">
+                                    0511 - 3354372
                                 </a>
-                            </Link>
+                            </span>
+                            <span>
+                                <a href="mailto:kontakt@fensterblatt.digital">
+                                    kontakt@fensterblatt.digital
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https.//xing.com/">Xing</a>
+                            </span>
                         </div>
                     </div>
                     <form

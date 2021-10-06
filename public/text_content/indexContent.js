@@ -1,12 +1,16 @@
-import marketingIllustration from "../imgs/marketing.png";
-import entwicklungIllustration from "../imgs/entwicklung.png";
-import designIllustration from "../imgs/design.png";
-import projektVonBerg from "../imgs/projekt_mediation_vonberg.png";
+import bildTextIllustration from "../imgs/leistungen/bildtext.png";
+import grafikdesignIllustration from "../imgs/leistungen/grafikdesign.png";
+import seoseaIllustration from "../imgs/leistungen/seosea.png";
+import strategieIllustration from "../imgs/leistungen/strategie.png";
+import webdesignIllustration from "../imgs/leistungen/webdesign.png";
+import webentwicklungIllustration from "../imgs/leistungen/webentwicklung.png";
+import projektVonBerg from "../imgs/projekte/projekt_screen_1.png";
+import projektMetaObjects from "../imgs/projekte/projekt_screen_2.png";
 
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
-    text1: "Wir bieten digitale Lösungen für Selbstständige, Kleinunternehmer sowie mittelständische Unternehmen.", //CHECK
-    linkText1: "Schreiben Sie uns", //CHECK
+    text1: "Wir bieten digitale Lösungen für Selbstständige, Kleinunternehmer sowie mittelständische Unternehmen.",
+    linkText1: "Schreiben Sie uns",
 };
 
 export const about = {
@@ -22,37 +26,37 @@ export const leistungen = {
         {
             title: "Strategie",
             text: "Erstberatung, Webstrategie",
-            img: marketingIllustration,
+            img: strategieIllustration,
             alt: "Illustration für Strategie",
         },
         {
             title: "Webdesign",
             text: "User Interface Design, User Experience Design",
-            img: designIllustration,
+            img: webdesignIllustration,
             alt: "Illustration für Webdesign",
         },
         {
             title: "Webentwicklung",
             text: "Entwicklung, Administration, Langzeitwartung",
-            img: entwicklungIllustration,
+            img: webentwicklungIllustration,
             alt: "Illustration für Webentwicklung",
         },
         {
             title: "Grafikdesign",
             text: "Logodesign, Corporate Design, Illustration",
-            img: marketingIllustration,
+            img: grafikdesignIllustration,
             alt: "Illustration für Grafikdesign",
         },
         {
             title: "Bild & Text",
             text: "Fotografie, Textinhalte",
-            img: marketingIllustration,
+            img: bildTextIllustration,
             alt: "Illustration für Bild & Text",
         },
         {
             title: "SEO & SEA",
             text: "Suchmaschinenoptimierung, Suchmaschinenwerbung",
-            img: marketingIllustration,
+            img: seoseaIllustration,
             alt: "Illustration für SEO und SEA",
         },
     ],
@@ -60,7 +64,7 @@ export const leistungen = {
 
 export const projekte = {
     heading: "Ausgewählte Projekte",
-    linkText1: "Zur vollständigen Projektübersicht", //CHECK
+    linkText1: "Zur vollständigen Projektübersicht",
     projekte: [
         {
             heading: "Mediation von Berg",
@@ -79,8 +83,8 @@ export const projekte = {
         {
             heading: "Meta-objects",
             tags: ["Webdesign", "Fotografie", "Corporate Design"],
-            img: projektVonBerg,
-            alt: "", //INSERT!!!
+            img: projektMetaObjects,
+            alt: 'Screenshot der Internetseite von "Meta-Objects"',
             align: "right",
             href: "/projekte/meta-objects",
         },
