@@ -109,6 +109,11 @@ body {
     overscroll-behavior-y: none;
 }
 
+::selection {
+    color: white;
+    background-color: #636363;
+}
+
 /* custom scrollbar */
 
 body::-webkit-scrollbar {
@@ -124,6 +129,8 @@ body::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 20px;
 }
+
+/* ELEMENTS */
 
 h1,
 h2,

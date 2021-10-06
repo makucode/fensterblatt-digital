@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import cookieCutter from "cookie-cutter";
 import { AnimatePresence, motion } from "framer-motion";
 import useKeepStyles from "../hooks/useKeepStyles";
 import Footer from "../components/Footer";
@@ -7,9 +7,9 @@ import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import useWindowDimensions from "../hooks/useWindowDimensions.js";
 import MobileMenu from "../components/navbar/MobileMenu.jsx";
-import BurgerBtn from "../components/navbar/BurgerBtn.jsx";
 import Scroller from "../components/Scroller.jsx";
 import CookieBanner from "../components/CookieBanner";
+import GAScripts from "../components/GAScripts";
 
 function MyApp({ Component, pageProps, router }) {
     const animations = {
@@ -31,8 +31,9 @@ function MyApp({ Component, pageProps, router }) {
 
     const { height, width } = useWindowDimensions();
     const [isMobile, setIsMobile] = useState(true);
+    const [isConsent, setIsConsent] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [bannerIn, setBannerIn] = useState(true);
+    const [bannerIn, setBannerIn] = useState(false);
 
     useEffect(() => {
         if (height / width >= 1 || width <= 1280) {
@@ -42,11 +43,20 @@ function MyApp({ Component, pageProps, router }) {
         }
     }, [height, width]);
 
+    useEffect(() => {
+        if (!cookieCutter.get("consent")) {
+            setBannerIn(true);
+        } else {
+            setIsConsent(true);
+        }
+    }, []);
+
     //FIX FOR FLASHING UNSTYLED COMPONENTS ON PAGE CHANGE
     useKeepStyles();
 
     return (
         <>
+            {isConsent && <GAScripts />}
             <Navbar isMobile={isMobile} setMenuOpen={setMenuOpen} />
             <CookieBanner bannerIn={bannerIn} setBannerIn={setBannerIn} />
             {isMobile && (

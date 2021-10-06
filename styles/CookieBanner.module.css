@@ -17,6 +17,29 @@
     transition: all ease-in-out 0.5s;
 }
 
+.CookieBanner a {
+    color: #8f8f8f;
+    display: block;
+}
+
+.CookieBanner a::after {
+    content: "";
+    display: block;
+    width: 0;
+    background-color: #8f8f8f;
+    margin-top: 0.1rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    border-bottom: solid 1px white;
+    margin-left: auto;
+}
+
+.CookieBanner a:hover:after {
+    width: 100%;
+    border-bottom: solid 1px #8f8f8f;
+    margin-left: 0;
+    margin-right: auto;
+}
 .bannerLeft {
     max-width: 70%;
     min-width: 70%;
@@ -26,7 +49,7 @@
 }
 
 .bannerLeft span {
-    display: block;
+    display: flex;
 }
 
 .bannerRight {
