@@ -9,7 +9,7 @@ import projektMetaObjects from "../imgs/projekte/projekt_screen_2.png";
 
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
-    text1: "Wir bieten digitale Lösungen für Selbstständige, Kleinunternehmer sowie mittelständische Unternehmen.",
+    text1: "Wir entwickeln digitale Lösungen für Selbstständige, kleine und mittelständische Unternehmen. ",
     linkText1: "Schreiben Sie uns",
 };
 

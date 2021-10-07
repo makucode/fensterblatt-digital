@@ -26,9 +26,8 @@ const CookieBanner = ({ bannerIn, setBannerIn }) => {
                     Diese Webseite verwendet Cookies und Google Analytics.
                     {"\xa0"}
                 </span>
-
-                <span>
-                    Weitere Informationen finden Sie in unserer
+                <span className={styles.bannerLeftLink}>
+                    <span>Weitere Informationen finden Sie in unserer</span>
                     {"\xa0"}
                     <Link href="/datenschutz" passHref>
                         <a>Datenschutzerklärung.</a>

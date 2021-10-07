@@ -25,7 +25,8 @@
 }
 
 .Navbar svg:hover {
-    fill: #444444;
+    fill: #636363;
+    transform: rotateZ(360deg);
 }
 
 @media only screen and (max-width: 1024px) {
