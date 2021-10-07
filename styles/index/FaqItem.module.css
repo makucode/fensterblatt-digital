@@ -64,3 +64,17 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .btnContainer {
+        transform: translateY(-4px);
+    }
+
+    .FaqItem h3 {
+        font-size: 1.25rem;
+    }
+
+    .FaqItem p {
+        font-size: 1rem;
+    }
+}

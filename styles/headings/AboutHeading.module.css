@@ -18,3 +18,9 @@
     opacity: 1;
     transform: translateY(0) rotateX(0);
 }
+
+@media only screen and (max-width: 600px) {
+    .aboutHeading {
+        font-size: 2.25rem;
+    }
+}

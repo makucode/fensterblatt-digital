@@ -3,12 +3,21 @@
     flex-wrap: wrap;
     color: #636363;
     margin-top: 0.75rem;
+    pointer-events: all;
 }
 
 .Tags li {
     border: solid 1px;
     margin-right: 1.5rem;
     font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-top: 0.75rem;
+}
+
+.Tags li {
+    margin-right: 1rem;
+    font-size: 0.9rem;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     margin-top: 0.75rem;

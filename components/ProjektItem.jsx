@@ -16,7 +16,9 @@ function ProjektItem(props) {
         >
             <div className={styles.Content}>
                 <ProjektItemHeading text={props.heading} />
-                <Tags tags={props.tags} />
+                <div className={styles.projektTags}>
+                    <Tags tags={props.tags} />
+                </div>
                 <Link scroll={false} href={props.href} passHref>
                     <a className="thin">
                         <div className="arrow"></div>

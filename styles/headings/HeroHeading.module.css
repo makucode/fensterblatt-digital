@@ -44,3 +44,27 @@
         max-width: 100%;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .HeroHeading {
+        font-size: 5.6rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .HeroHeading {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .HeroHeading {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .HeroHeading {
+        font-size: 3rem;
+    }
+}

@@ -20,3 +20,27 @@
     opacity: 1;
     transform: translateY(0) rotateX(0);
 }
+
+@media only screen and (max-width: 1024px) {
+    .SectionHeading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .SectionHeading {
+        font-size: 3.4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SectionHeading {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .SectionHeading {
+        font-size: 2.25rem;
+    }
+}

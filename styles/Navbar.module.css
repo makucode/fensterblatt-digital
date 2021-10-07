@@ -24,11 +24,6 @@
     transition: all ease 0.2s;
 }
 
-.Navbar svg:hover {
-    fill: #636363;
-    transform: rotateZ(360deg);
-}
-
 @media only screen and (max-width: 1024px) {
     .Navbar {
         width: calc(100% - 20vw);

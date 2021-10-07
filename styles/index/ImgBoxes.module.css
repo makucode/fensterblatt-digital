@@ -1,7 +1,7 @@
 .indexHeroBoxes {
     display: flex;
     position: fixed;
-    top: 13vh;
+    top: 16.3vh;
     right: 20vw;
 }
 
@@ -23,12 +23,12 @@
 .indexHeroBoxes div {
     transition: all ease 0.5s;
     border-radius: 7px;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 .indexHeroBoxes img {
     display: block;
-    width: 10.3vw;
+    width: 10.7vw;
 
     border-radius: 7px;
 }
@@ -63,6 +63,12 @@
     to {
         transform: translateY(320px);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .indexHeroBoxes {
+        top: 13vh;
     }
 }
 

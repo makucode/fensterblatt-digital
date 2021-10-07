@@ -62,3 +62,25 @@
         order: 1 !important;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .leistungenItem h2 {
+        font-size: 3rem !important;
+    }
+
+    .itemImg {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .leistungenItem h2 {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .leistungenItem h2 {
+        font-size: 2.25rem !important;
+    }
+}

@@ -58,7 +58,7 @@ function KontaktPage() {
                             <span>
                                 <a href="mailto:kontakt@fensterblatt.digital">
                                     <TelIcon />
-                                    0511 3354372
+                                    0511 444 530 5
                                 </a>
                             </span>
                             <span>

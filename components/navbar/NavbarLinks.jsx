@@ -7,16 +7,21 @@ const NavbarLinks = ({ setMenuOpen }) => {
     const { pathname } = useRouter();
     const [isHovering, setIsHovering] = useState(false);
 
-    const pages = ["projekte", "leistungen", "about", "kontakt"];
+    const pages = ["Projekte", "Leistungen", "About", "Kontakt"];
 
     const getLinks = () => {
         return pages.map((page) => (
-            <Link scroll={false} key={page} passHref href={"/" + page}>
+            <Link
+                scroll={false}
+                key={page}
+                passHref
+                href={"/" + page.toLowerCase()}
+            >
                 <a
                     className={
                         styles.NavbarLink +
                         " " +
-                        (pathname.includes(page) && !isHovering
+                        (pathname.includes(page.toLowerCase()) && !isHovering
                             ? styles.NavActive
                             : "")
                     }
@@ -24,7 +29,7 @@ const NavbarLinks = ({ setMenuOpen }) => {
                     onMouseLeave={() => setIsHovering(false)}
                     onClick={() => setMenuOpen(false)}
                 >
-                    {page !== "about" ? page : "Über uns"}
+                    {page !== "About" ? page : "Über uns"}
                 </a>
             </Link>
         ));

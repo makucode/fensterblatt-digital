@@ -105,3 +105,15 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .kontaktMail {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .kontaktMail {
+        font-size: 1.25rem;
+    }
+}

@@ -143,7 +143,7 @@ h6 {
 }
 
 .subH1 {
-    font-size: 4.7rem;
+    font-size: 4.5rem;
     font-weight: 500;
 }
 
@@ -171,6 +171,7 @@ a {
     text-decoration: none;
     position: relative;
     z-index: 20;
+    pointer-events: all;
 }
 
 button {
@@ -316,24 +317,64 @@ label {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .subPageContent {
-        margin-top: 12vh;
+@media only screen and (max-width: 600px) {
+    .subH1 {
+        font-size: 3.6rem;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    p {
+        font-size: 1rem;
+    }
+
     .subH1 {
-        font-size: 4rem;
+        font-size: 3.2rem;
+    }
+
+    .bold,
+    .thin {
+        font-size: 1rem;
+        height: 24px;
+    }
+
+    .bold svg,
+    .thin svg {
+        min-width: 22px;
+        max-width: 22px;
+    }
+
+    .bold span,
+    .thin span {
+        margin-left: 10px;
+    }
+
+    .bold:hover span,
+    .thin:hover span {
+        opacity: 1;
+    }
+
+    .bold:hover svg,
+    .thin:hover svg {
+        transform: translateX(0);
+    }
+
+    .bold:hover svg line {
+        stroke: #ffffff;
+    }
+
+    .thin:hover svg line {
+        stroke: black;
+    }
+
+    .bold:hover:before,
+    .thin:hover:before {
+        min-width: calc(0%);
     }
 }
 
 @media only screen and (max-width: 400px) {
     .subH1 {
-        font-size: 3.4rem;
-    }
-
-    .subPageContent {
-        margin-top: 12vh;
+        font-size: 2.8rem;
     }
 }
