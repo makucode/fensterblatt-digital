@@ -4,11 +4,22 @@ import { info, form, link } from "../public/text_content/kontaktContent";
 import { useState } from "react";
 import ArrowIcon from "../components/svgs/ArrowIcon";
 import PageHeading from "../components/PageHeading";
+import MailIcon from "../components/svgs/MailIcon";
+import TelIcon from "../components/svgs/TelIcon";
+import XingIcon from "../components/svgs/XingIcon";
 
 function KontaktPage() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [msg, setMsg] = useState("");
+    const [isPopup, setIsPopup] = useState(false);
+
+    const popUp = () => {
+        setIsPopup(true);
+        setTimeout(() => {
+            setIsPopup(false);
+        }, 2000);
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,6 +30,7 @@ function KontaktPage() {
         setName("");
         setEmail("");
         setMsg("");
+        popUp();
     };
 
     return (
@@ -39,16 +51,21 @@ function KontaktPage() {
                         <div className={styles.kontaktInfoItems}>
                             <span>
                                 <a href="mailto:kontakt@fensterblatt.digital">
-                                    0511 - 3354372
-                                </a>
-                            </span>
-                            <span>
-                                <a href="mailto:kontakt@fensterblatt.digital">
+                                    <MailIcon />
                                     kontakt@fensterblatt.digital
                                 </a>
                             </span>
                             <span>
-                                <a href="https.//xing.com/">Xing</a>
+                                <a href="mailto:kontakt@fensterblatt.digital">
+                                    <TelIcon />
+                                    0511 3354372
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https.//xing.com/">
+                                    <XingIcon />
+                                    Xing
+                                </a>
                             </span>
                         </div>
                     </div>
@@ -90,6 +107,16 @@ function KontaktPage() {
                             <div className="arrow"></div>
                             <ArrowIcon />
                             <span>{link.linkText1}</span>
+                            <div
+                                className={
+                                    styles.submitPopup +
+                                    (isPopup ? " " + styles.submitPopupIn : "")
+                                }
+                            >
+                                Erfolgreich
+                                <br />
+                                abgeschickt!
+                            </div>
                         </button>
                     </form>
                 </section>

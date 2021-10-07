@@ -8,8 +8,15 @@
     width: 33%;
 }
 
+.kontaktInfo h1 {
+    margin-bottom: 2vh;
+}
+
+.kontaktInfo svg {
+    margin-right: 15px;
+}
+
 .kontaktInfo a {
-    font-family: "ClashDisplay";
     font-size: 1.6rem;
     font-weight: 500;
     color: black;
@@ -52,9 +59,34 @@
 
 .kontaktInfoItems span {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+.submitPopup {
+    position: absolute;
+    transform: translate(-7.5%, 0);
+    background-color: #eeeeee;
+    border-radius: 7px;
+    border: solid 1px #707070;
+    color: black;
+    padding: 1rem 2rem;
+    opacity: 0;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.submitPopupIn {
+    opacity: 1;
+    transform: translate(-7.5%, -110%);
+}
+
+@media only screen and (max-width: 1920px) {
+    .kontaktInfo a {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: black;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -67,5 +99,14 @@
     }
     .kontakt form {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .kontaktInfoItems span {
+        transform: translateY(-3px);
+    }
+    .kontaktInfoItems a {
+        font-size: 1rem;
     }
 }
