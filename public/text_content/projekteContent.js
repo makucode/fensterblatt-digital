@@ -1,5 +1,5 @@
-import projektVonBerg from "../imgs/projekte/projekt_screen_1.png";
-import projektMetaObjects from "../imgs/projekte/projekt_screen_2.png";
+import projektVonBerg from "../imgs/projects/projekt_screen_1.png";
+import projektMetaObjects from "../imgs/projects/projekt_screen_2.png";
 
 export const heading = {
     heading: "Bisherige Projekte",

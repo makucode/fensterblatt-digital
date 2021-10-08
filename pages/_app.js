@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import cookieCutter from "cookie-cutter";
 import { AnimatePresence, motion } from "framer-motion";
 import useKeepStyles from "../hooks/useKeepStyles";
@@ -56,6 +57,9 @@ function MyApp({ Component, pageProps, router }) {
 
     return (
         <>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             {isConsent && <GAScripts />}
             <Navbar isMobile={isMobile} setMenuOpen={setMenuOpen} />
             <CookieBanner bannerIn={bannerIn} setBannerIn={setBannerIn} />

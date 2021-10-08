@@ -4,8 +4,8 @@ import seoseaIllustration from "../imgs/leistungen/seosea.png";
 import strategieIllustration from "../imgs/leistungen/strategie.png";
 import webdesignIllustration from "../imgs/leistungen/webdesign.png";
 import webentwicklungIllustration from "../imgs/leistungen/webentwicklung.png";
-import projektVonBerg from "../imgs/projekte/projekt_screen_1.png";
-import projektMetaObjects from "../imgs/projekte/projekt_screen_2.png";
+import projektVonBerg from "../imgs/projects/projekt_screen_1.png";
+import projektMetaObjects from "../imgs/projects/projekt_screen_2.png";
 
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
@@ -111,6 +111,6 @@ export const faq = {
 
 export const kontakt = {
     heading: "Interessiert?",
-    subHeading1: "Schreiben Sie uns",
+    subHeading1: "Schreiben Sie uns!",
     linkText1: "Zum Kontaktformular",
 };

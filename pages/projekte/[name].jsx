@@ -5,7 +5,7 @@ import Image from "next/image";
 import { v4 as uuid } from "uuid";
 import ArrowIcon from "../../components/svgs/ArrowIcon";
 import Tags from "../../components/Tags";
-import styles from "../../styles/SingleProjekt.module.css";
+import styles from "../../styles/pages/SingleProjekt.module.css";
 import { projekte } from "../../public/text_content/projekte";
 
 function SingleProjektPage({ projekt }) {

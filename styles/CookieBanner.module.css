@@ -40,6 +40,7 @@
     margin-left: auto;
     margin-right: 0;
 }
+
 .bannerLeft {
     max-width: 70%;
     min-width: 70%;
@@ -49,7 +50,12 @@
 }
 
 .bannerLeft span {
-    display: flex;
+    width: fit-content;
+}
+
+.bannerLeft a {
+    display: inline-block;
+    width: fit-content;
 }
 
 .bannerRight {
@@ -98,6 +104,10 @@
         width: 80vw;
         padding: 1vh 10vw;
     }
+
+    .bannerLeft span {
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -109,7 +119,7 @@
     }
 
     .bannerLeft {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .bannerRight {

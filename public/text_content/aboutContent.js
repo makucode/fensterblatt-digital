@@ -1,4 +1,4 @@
-import aboutImg from "../../public/imgs/about-us-team.jpg";
+import aboutImg from "../../public/imgs/about/about-us-team.jpg";
 
 export const heading = {
     heading: "Fensterblatt Webdesign",

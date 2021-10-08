@@ -27,11 +27,13 @@ const CookieBanner = ({ bannerIn, setBannerIn }) => {
                     {"\xa0"}
                 </span>
                 <span className={styles.bannerLeftLink}>
-                    <span>Weitere Informationen finden Sie in unserer</span>
-                    {"\xa0"}
-                    <Link href="/datenschutz" passHref>
-                        <a>Datenschutzerklärung.</a>
-                    </Link>
+                    <span>
+                        Weitere Informationen finden Sie in unserer
+                        {"\xa0"}
+                        <Link href="/datenschutz" passHref>
+                            <a>Datenschutzerklärung.</a>
+                        </Link>
+                    </span>
                 </span>
             </div>
             <div className={styles.bannerRight}>

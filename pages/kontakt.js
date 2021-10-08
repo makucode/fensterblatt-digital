@@ -62,7 +62,7 @@ function KontaktPage() {
                                 </a>
                             </span>
                             <span>
-                                <a href="https.//xing.com/">
+                                <a href="https://xing.com/">
                                     <XingIcon />
                                     Xing
                                 </a>
