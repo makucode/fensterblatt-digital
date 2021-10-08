@@ -63,7 +63,12 @@ function SingleProjektPage({ projekt }) {
                                     key={uuid()}
                                     className={styles.imgContainer}
                                 >
-                                    <Image src={img.img} alt={img.alt} />
+                                    <Image
+                                        src={img.img}
+                                        alt={img.alt}
+                                        width="1900px"
+                                        height="936px"
+                                    />
                                 </div>
                             ))}
                     </section>

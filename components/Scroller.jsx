@@ -17,6 +17,11 @@ const Scroller = ({ children, isMobile }) => {
                     scrollContainer.current.getBoundingClientRect().height +
                     "px";
             }, 500);
+            setTimeout(() => {
+                document.body.style.height =
+                    scrollContainer.current.getBoundingClientRect().height +
+                    "px";
+            }, 1000);
         }
     });
 

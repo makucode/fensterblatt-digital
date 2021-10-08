@@ -1,10 +1,3 @@
-import projektVonBerg1 from "../imgs/projects/vonberg_1.png";
-import projektVonBerg2 from "../imgs/projects/vonberg_2.png";
-import projektVonBerg3 from "../imgs/projects/vonberg_3.png";
-import projektMeta1 from "../imgs/projects/meta_1.png";
-import projektMeta2 from "../imgs/projects/meta_2.png";
-import projektMeta3 from "../imgs/projects/meta_3.png";
-
 export const projekte = [
     {
         name: "Mediation von Berg",
@@ -28,15 +21,15 @@ export const projekte = [
         ],
         imgs: [
             {
-                img: projektVonBerg1,
+                img: "/imgs/projects/vonberg_1.png",
                 alt: 'Screenshot der Internetseite von "Mediation von Berg"',
             },
             {
-                img: projektVonBerg2,
+                img: "/imgs/projects/vonberg_2.png",
                 alt: 'Screenshot der Internetseite von "Mediation von Berg"',
             },
             {
-                img: projektVonBerg3,
+                img: "/imgs/projects/vonberg_3.png",
                 alt: 'Screenshot der Internetseite von "Mediation von Berg"',
             },
         ],
@@ -60,15 +53,15 @@ export const projekte = [
         tags: ["Webdesign", "Fotografie", "Branding"],
         imgs: [
             {
-                img: projektMeta1,
+                img: "/imgs/projects/meta_1.png",
                 alt: 'Screenshot der Internetseite von "Meta-objects"',
             },
             {
-                img: projektMeta2,
+                img: "/imgs/projects/meta_2.png",
                 alt: 'Screenshot der Internetseite von "Meta-objects"',
             },
             {
-                img: projektMeta3,
+                img: "/imgs/projects/meta_3.png",
                 alt: 'Screenshot der Internetseite von "Meta-objects"',
             },
         ],
