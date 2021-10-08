@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Router from "next/router";
 import cookieCutter from "cookie-cutter";
 import styles from "../styles/CookieBanner.module.css";
 
@@ -12,7 +11,6 @@ const CookieBanner = ({ bannerIn, setBannerIn }) => {
             sameSite: "strict",
             secure: true,
         });
-        Router.reload(window.location.pathname);
     };
 
     return (

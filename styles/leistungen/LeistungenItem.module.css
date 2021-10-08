@@ -51,6 +51,12 @@
         margin-top: 8vh;
     }
 
+    .leistungenItem h2 {
+        margin: 0 auto;
+        margin-bottom: 1vh;
+        width: fit-content;
+    }
+
     .itemImg {
         width: 60%;
         order: 0 !important;

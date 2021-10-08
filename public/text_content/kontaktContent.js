@@ -1,6 +1,6 @@
 export const info = {
     heading: "Schreiben Sie uns!",
-    text1: "Sie helfen uns ihr Anliegen zu verstehen, indem Sie ihr Projekt beschreiben und uns ihr grobes Budget und Zeitfenster mitteilen.",
+    text1: "Helfen Sie uns, indem Sie Ihr Projekt möglichst genau beschreiben und uns gerne vorab ihr grobes Budget und Zeitfenster mitteilen. ",
 };
 
 export const form = {
@@ -9,7 +9,8 @@ export const form = {
     labelMail: "E-Mail-Adresse",
     placeholderMail: "Wo können wir uns melden?",
     labelMsg: "Nachricht",
-    placeholderMsg: "Worum geht es?",
+    placeholderMsg:
+        "Worum geht es, wann soll es passieren und wo liegt Ihr Preisrahmen?",
 };
 
 export const link = {

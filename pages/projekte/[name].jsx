@@ -45,6 +45,13 @@ function SingleProjektPage({ projekt }) {
                     <section className={styles.projektInfo}>
                         <h2>{projekt.subHeading2}</h2>
                         <p>{projekt.subText2}</p>
+                        {projekt.subText2p2 && (
+                            <>
+                                <p style={{ marginTop: "1vh" }}>
+                                    {projekt.subText2p2}
+                                </p>
+                            </>
+                        )}
                     </section>
                     <section className={styles.projektTags}>
                         <Tags tags={projekt.tags} />
@@ -59,6 +66,14 @@ function SingleProjektPage({ projekt }) {
                                     <Image src={img.img} alt={img.alt} />
                                 </div>
                             ))}
+                    </section>
+                    <section
+                        className={
+                            styles.projektInfo + " " + styles.projektInfo3
+                        }
+                    >
+                        <h3>{projekt.subHeading3}</h3>
+                        <p>{projekt.subText3}</p>
                     </section>
                     <section className={styles.link}>
                         <Link scroll={false} href="/projekte" passHref>

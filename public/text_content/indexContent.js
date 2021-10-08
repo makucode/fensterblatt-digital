@@ -9,13 +9,13 @@ import projektMetaObjects from "../imgs/projects/projekt_screen_2.png";
 
 export const hero = {
     heading: "Webseiten, effektiv und kreativ",
-    text1: "Wir entwickeln digitale Lösungen für Selbstständige, kleine und mittelständische Unternehmen. ",
+    text1: "Wir entwickeln digitale Lösungen für Selbstständige, kleine und mittelständische Unternehmen.",
     linkText1: "Schreiben Sie uns",
 };
 
 export const about = {
     heading: "Qualität und Nachhaltigkeit",
-    text1: "Wir können einzigartige Webseiten zu bezahlbaren Preisen anbieten, da wir ein kleines, effizientes und leidenschaftliches Team sind. Was uns außerdem besonders am Herzen liegt ist der Umweltschutz, weshalb wir verschiedene nachhaltige Projekte fördern.",
+    text1: "Wir können einzigartige Webseiten zu bezahlbaren Preisen anbieten, da wir ein effizientes und leidenschaftliches Team sind. Was uns außerdem besonders am Herzen liegt ist der Umweltschutz, weshalb wir verschiedene nachhaltige Projekte fördern.",
     linkText1: "Mehr über uns",
 };
 
@@ -25,13 +25,13 @@ export const leistungen = {
     items: [
         {
             title: "Strategie",
-            text: "Erstberatung, Webstrategie",
+            text: "Beratung, Ziele, Webstrategie",
             img: strategieIllustration,
             alt: "Illustration für Strategie",
         },
         {
             title: "Webdesign",
-            text: "User Interface Design, User Experience Design",
+            text: "User Interface, User Experience, Prototyping",
             img: webdesignIllustration,
             alt: "Illustration für Webdesign",
         },
@@ -43,13 +43,13 @@ export const leistungen = {
         },
         {
             title: "Grafikdesign",
-            text: "Logodesign, Corporate Design, Illustration",
+            text: "Branding, Corporate Design, Logodesign",
             img: grafikdesignIllustration,
             alt: "Illustration für Grafikdesign",
         },
         {
             title: "Bild & Text",
-            text: "Fotografie, Textinhalte",
+            text: "Fotografie, Video, Textinhalte",
             img: bildTextIllustration,
             alt: "Illustration für Bild & Text",
         },
@@ -69,11 +69,11 @@ export const projekte = {
         {
             heading: "Mediation von Berg",
             tags: [
-                "Webdevelopment",
-                "SEO",
                 "Webdesign",
-                "Fotografie",
+                "Webentwicklung",
                 "Corporate Design",
+                "Fotografie",
+                "SEO",
             ],
             img: projektVonBerg,
             alt: 'Screenshot der Internetseite von "Mediation von Berg"',
@@ -82,7 +82,7 @@ export const projekte = {
         },
         {
             heading: "Meta-objects",
-            tags: ["Webdesign", "Fotografie", "Corporate Design"],
+            tags: ["Webdesign", "Fotografie", "Branding"],
             img: projektMetaObjects,
             alt: 'Screenshot der Internetseite von "Meta-Objects"',
             align: "right",
@@ -95,16 +95,21 @@ export const faq = {
     heading: "FAQ",
     items: [
         {
-            heading: "Was kostet das?",
-            text1: "Hm das können wir leider nicht beantworten",
+            heading: "Wie läuft ein Projekt ab?",
+            text1: "Zu Beginn jedes neuen Projekts sprechen wir zunächst ausführlich mit Ihnen, um ihre Anforderungen und Ziele zu verstehen und Zeitrahmen und Kosten zu vereinbaren. Anschließend entwerfen wir auf dieser Grundlage einen visuellen Prototypen, welchen wir Ihnen präsentieren. Sind mit diesem alle zufrieden, findet im nächsten Schritt die technische Entwicklung statt. Abschließend übergeben wir die Seite oder stellen sie für Sie online. Falls nach Abschluss eines Projekts Fragen, Probleme oder weitere Wünsche aufkommen, sind wir selbstverständlich immer erreichbar.",
+        },
+        {
+            heading: "Was kostet eine Webseite?",
+            text1: "Eine pauschale Antwort lässt sich darauf natürlich nicht geben, da Webseiten in Umfang und Komplexität stark variieren. Erst nach einem Gespräch können wir genau einschätzen, wie umfangreich ein Projekt sein wird. Um Ihnen aber eine ungefähre Vorstellung zu geben: Sehr simple Projekte, wie z. B. eine Landingpage, setzen wir bereits für einige hundert Euro um, während ein sehr umfangreicher Online-Shop einige Tausend Euro kosten kann.",
         },
         {
             heading: "Wie lange dauert das?",
-            text1: "Hm das können wir leider nicht beantworten",
+            text1: "Wir arbeiten am liebsten schnell und effektiv. Ein durchschnittliches Projekt dauert bei uns, je nach Umfang, ungefähr drei bis acht Wochen.",
         },
         {
-            heading: "Wer ist dieser Maxi?",
-            text1: "Das beantworten wir ihnen gern bei einem persönlichen Gespräch!",
+            heading:
+                "Ich habe schon eine Webseite, könnt ihr diese überarbeiteten?",
+            text1: "In den meisten Fällen ist es effizienter und kostengünstiger, eine Webseite von Grund auf neu zu entwickeln. Falls Ihre bestehende Seite sich aber tatsächlich eignen sollte, darauf aufzubauen, sind wir natürlich dazu bereit, z. B. falls die Seite um eine Funktionalität erweitert werden, oder grafisch neu gestaltet werden soll.",
         },
     ],
 };
