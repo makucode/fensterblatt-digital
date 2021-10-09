@@ -48,6 +48,10 @@ export default function Home() {
                     content="Wir, zwei Design- und Technikbegeisterte aus Hannover, haben uns zum Ziel gesetzt, die digitale Welt um uns herum etwas schöner zu gestalten."
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="google-site-verification"
+                    content="BlLDjU2by3mgocoAg_N2AQJJNF8lBObcDBvMRmm0Z-Q"
+                />
             </Head>
             <div className={styles.indexContent}>
                 <section className={styles.indexHero}>
