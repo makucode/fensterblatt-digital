@@ -109,7 +109,7 @@ export const faq = {
         {
             heading:
                 "Ich habe schon eine Webseite, könnt ihr diese überarbeiteten?",
-            text1: "In den meisten Fällen ist es effizienter und kostengünstiger, eine Webseite von Grund auf neu zu entwickeln. Falls Ihre bestehende Seite sich aber tatsächlich eignen sollte, darauf aufzubauen, sind wir natürlich dazu bereit, z. B. falls die Seite um eine Funktionalität erweitert werden, oder grafisch neu gestaltet werden soll.",
+            text1: "In den meisten Fällen ist es effizienter und kostengünstiger, eine Webseite von Grund auf neu zu entwickeln. Falls Ihre bestehende Seite sich aber tatsächlich eignen sollte, darauf aufzubauen, sind wir natürlich dazu bereit, z. B. falls die Seite um eine Funktionalität erweitert oder grafisch neu gestaltet werden soll.",
         },
     ],
 };

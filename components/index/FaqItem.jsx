@@ -15,6 +15,19 @@ function FaqItem(props) {
         setIsOpen(!isOpen);
     };
 
+    useEffect(() => {
+        const hideFaqs = () => {
+            if (document.body.scrollHeight - window.innerHeight === scrollY) {
+                const item = collapsible.current;
+                if (item && item.style.height !== null)
+                    item.style.height = null;
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("scroll", hideFaqs);
+    });
+
     return (
         <div
             onClick={handleFaqClick}
