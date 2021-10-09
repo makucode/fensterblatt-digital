@@ -1,0 +1,38 @@
+.datenschutz h1 {
+    margin-bottom: 2vh;
+}
+
+.datenschutz h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
+.datenschutz h3 {
+    font-size: 2rem;
+    margin-bottom: 1vh;
+    margin-top: 0.5rem;
+}
+
+.datenschutz p {
+    margin-bottom: 1vh;
+}
+
+.datenschutz a {
+    color: #636363;
+}
+
+.datenschutzContent {
+    font-family: "Montserrat";
+}
+
+.datenschutzContent ul {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.datenschutzContent li {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #636363;
+    font-size: 1rem;
+}
