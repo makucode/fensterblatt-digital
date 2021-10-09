@@ -1,6 +1,7 @@
 .aboutHeading {
     display: flex;
     flex-wrap: wrap;
+    font-size: 2.8rem;
 }
 
 .aboutHeading div {

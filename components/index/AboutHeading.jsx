@@ -34,7 +34,7 @@ const AboutHeading = (props) => {
     };
 
     return (
-        <h3
+        <h2
             className={
                 styles.aboutHeading +
                 " " +
@@ -43,7 +43,7 @@ const AboutHeading = (props) => {
             ref={heading}
         >
             {getWords()}
-        </h3>
+        </h2>
     );
 };
 

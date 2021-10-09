@@ -22,7 +22,7 @@ function Navbar({ isMobile, setMenuOpen }) {
     return (
         <nav className={styles.Navbar + (!showNav ? " " + styles.Hidden : "")}>
             <Link scroll={false} href="/" passHref>
-                <a>
+                <a title="Logo von Fensterblatt Digital">
                     <Logo />
                 </a>
             </Link>
