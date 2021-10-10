@@ -1,5 +1,8 @@
 ## Fensterblatt Digital - Webapp build with Next.js
 
+dev by makucode
+design by Yuan Ahn
+
 ## Getting Started
 
 Development server:
