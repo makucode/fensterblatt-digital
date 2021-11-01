@@ -29,7 +29,7 @@ function ProjektItem(props) {
             </div>
             <Link scroll={false} href={props.href} passHref>
                 <div className={styles.imgContainer}>
-                    <Image src={props.img} alt={props.alt} />
+                    <Image src={props.img} alt={props.alt} priority />
                 </div>
             </Link>
         </div>

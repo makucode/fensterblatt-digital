@@ -57,11 +57,16 @@
     margin-bottom: 20vh;
 }
 
+.indexKontaktInfo {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
 .kontaktMail {
     display: block;
     color: #000000;
     font-weight: 500;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
 }
 

@@ -44,7 +44,7 @@ export const items = [
             "React",
             "Custom Page",
             "CMS",
-            "Online-Shops",
+            "Wartung",
             "Hosting",
         ],
     },

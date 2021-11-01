@@ -123,7 +123,9 @@ export default function Home() {
                 <Separator />
                 <section className={styles.indexKontakt}>
                     <SectionHeading text={kontakt.heading} />
-                    <SectionHeading text={kontakt.subHeading1} />
+                    <div className={styles.indexKontaktInfo}>
+                        <p>{kontakt.text1}</p>
+                    </div>
                     <div>
                         <a
                             className={styles.kontaktMail}

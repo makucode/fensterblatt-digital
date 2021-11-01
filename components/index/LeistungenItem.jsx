@@ -10,6 +10,7 @@ function LeistungenItem(props) {
                     alt={props.alt}
                     width="180px"
                     height="180px"
+                    priority
                 />
             </div>
             <h3>{props.heading}</h3>

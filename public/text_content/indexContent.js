@@ -115,7 +115,7 @@ export const faq = {
 };
 
 export const kontakt = {
-    heading: "Interessiert?",
-    subHeading1: "Schreiben Sie uns!",
+    heading: "Schreiben Sie uns!",
+    text1: "Bei Fragen oder für ein kostenloses Erstgespräch können Sie einfach unser Kontaktformular nutzen oder uns eine E-Mail schreiben.",
     linkText1: "Zum Kontaktformular",
 };
