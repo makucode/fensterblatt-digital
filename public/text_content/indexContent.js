@@ -107,8 +107,7 @@ export const faq = {
             text1: "Wir arbeiten am liebsten schnell und effektiv. Ein durchschnittliches Projekt dauert bei uns, je nach Umfang, ungefähr drei bis acht Wochen.",
         },
         {
-            heading:
-                "Ich habe schon eine Webseite, könnt ihr diese überarbeiteten?",
+            heading: "Könnt ihr meine bestehende Webseite überarbeiten?",
             text1: "In den meisten Fällen ist es effizienter und kostengünstiger, eine Webseite von Grund auf neu zu entwickeln. Falls Ihre bestehende Seite sich aber tatsächlich eignen sollte, darauf aufzubauen, sind wir natürlich dazu bereit, z. B. falls die Seite um eine Funktionalität erweitert oder grafisch neu gestaltet werden soll.",
         },
     ],
