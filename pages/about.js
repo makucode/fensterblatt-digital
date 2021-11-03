@@ -39,10 +39,6 @@ function About() {
                     </div>
                     <div className={styles.aboutInfoImg}>
                         <Image src={img.img} alt={img.alt} priority />
-                        <span className={styles.imgCaption}>
-                            Das dynamische Duo: Maximilian Friedrich und Yuan
-                            Ahn
-                        </span>
                     </div>
                 </section>
                 <section className={styles.aboutSection}>
