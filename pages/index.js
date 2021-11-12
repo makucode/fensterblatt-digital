@@ -25,10 +25,6 @@ import KontaktMail from "../components/index/KontaktMail";
 export default function Home() {
     const [curHero, setCurHero] = useState(Math.floor(Math.random() * 4));
 
-    useEffect(() => {
-        setCurHero(Math.floor(Math.random() * 4));
-    }, []);
-
     const renderProjects = () => {
         return projekte.projekte.map((projekt, idx) => (
             <ProjektItem key={uuid()} index={idx} {...projekt} />

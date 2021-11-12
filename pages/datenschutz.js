@@ -22,7 +22,13 @@ function Datenschutz() {
                             insbesondere der EU-Datenschutzgrundverordnung
                             (DSGVO), ist:
                         </p>
+                        <br />
                         <p>Maximilian Friedrich</p>
+                        <p>maximilian.friedrich@fensterblatt.digital</p>
+                        <br />
+                        <p>Anschrift:</p>
+                        <p>Kötnerholzweg 38</p>
+                        <p>30451 Hannover</p>
                         <h2>Ihre Betroffenenrechte</h2>
                         <p>
                             Unter den angegebenen Kontaktdaten unseres
