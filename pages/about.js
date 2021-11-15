@@ -27,7 +27,9 @@ function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={"subPageContent"}>
-                <section className={styles.aboutSection}>
+                <section
+                    className={styles.aboutSection + " " + styles.aboutSection1}
+                >
                     <div className={styles.aboutInfo}>
                         <PageHeading text={about.heading} />
                         <p>

@@ -72,6 +72,12 @@
     }
 }
 
+@media only screen and (max-height: 880px) {
+    .indexHeroBoxes {
+        top: 18vh;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .indexHeroBoxes {
         display: none;

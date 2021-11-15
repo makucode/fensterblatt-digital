@@ -76,7 +76,23 @@
     }
 }
 
-@media only screen and (max-width: 1280px), screen and (orientation: portrait) {
+@media only screen and (max-width: 1780px) {
+    .indexAbout {
+        flex-direction: column;
+    }
+
+    .indexAboutLeft {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3vh;
+    }
+
+    .indexAbout p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
     .headingHeroSub {
         width: 100%;
     }
