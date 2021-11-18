@@ -1,7 +1,8 @@
+import { useState } from "react";
 import Head from "next/head";
+import axios from "axios";
 import styles from "../styles/pages/Kontakt.module.css";
 import { info, form, link } from "../public/text_content/kontaktContent";
-import { useState } from "react";
 import ArrowIcon from "../components/svgs/ArrowIcon";
 import PageHeading from "../components/PageHeading";
 import MailIcon from "../components/svgs/MailIcon";
@@ -23,13 +24,15 @@ function KontaktPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        fetch("/api/mail", {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, email, msg }),
-        });
+        const res = await axios.post(
+            "/api/mail",
+            { name, email, msg },
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }
+        );
         setName("");
         setEmail("");
         setMsg("");

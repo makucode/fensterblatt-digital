@@ -3,7 +3,7 @@ import mail from "@sendgrid/mail";
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const getMails = async (req, res) => {
-    const body = JSON.parse(req.body);
+    const { body } = req;
     const msg =
         "Name: " +
         body.name +
