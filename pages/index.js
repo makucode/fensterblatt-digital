@@ -22,7 +22,7 @@ import HeroHeading from "../components/index/HeroHeading";
 import AboutHeading from "../components/index/AboutHeading";
 import KontaktMail from "../components/index/KontaktMail";
 
-export default function Home() {
+const Home = () => {
     const [curHero, setCurHero] = useState(Math.floor(Math.random() * 4));
 
     const renderProjects = () => {
@@ -141,4 +141,6 @@ export default function Home() {
             </div>
         </div>
     );
-}
+};
+
+export default Home;
