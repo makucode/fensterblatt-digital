@@ -25,6 +25,9 @@ function KontaktPage() {
         e.preventDefault();
         fetch("/api/mail", {
             method: "post",
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify({ name, email, msg }),
         });
         setName("");

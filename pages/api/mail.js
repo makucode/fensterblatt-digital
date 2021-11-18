@@ -2,7 +2,7 @@ import mail from "@sendgrid/mail";
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const getMails = (req, res) => {
+const getMails = async (req, res) => {
     const body = JSON.parse(req.body);
     const msg =
         "Name: " +
@@ -23,7 +23,7 @@ const getMails = (req, res) => {
         html: msg.replace(/\r\n/g, "<br>"),
     };
 
-    mail.send(data);
+    await mail.send(data);
 
     res.status(200).json({ status: "Ok" });
 };
