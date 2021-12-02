@@ -1,5 +1,7 @@
 ## Fensterblatt Digital - Webapp built with Next.js
 
+https://fensterblatt.digital/
+
 Development by makucode, Design by Yuan Ahn
 
 ## Getting Started
@@ -15,7 +17,7 @@ yarn dev
 Build:
 
 ```bash
-npm run dev
+npm run build
 ```
 
 Start Build:
