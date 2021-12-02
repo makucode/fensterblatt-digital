@@ -72,6 +72,8 @@ function SingleProjektPage({ projekt }) {
                                         alt={img.alt}
                                         width="1900px"
                                         height="936px"
+                                        loading="eager"
+                                        layout="responsive"
                                     />
                                 </div>
                             ))}

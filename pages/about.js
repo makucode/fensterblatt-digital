@@ -40,7 +40,12 @@ function About() {
                         </p>
                     </div>
                     <div className={styles.aboutInfoImg}>
-                        <Image src={img.img} alt={img.alt} priority />
+                        <Image
+                            src={img.img}
+                            alt={img.alt}
+                            loading="eager"
+                            layout="responsive"
+                        />
                     </div>
                 </section>
                 <section className={styles.aboutSection}>
