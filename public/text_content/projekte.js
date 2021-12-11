@@ -65,6 +65,6 @@ export const projekte = [
                 alt: 'Screenshot der Internetseite von "Meta-objects"',
             },
         ],
-        href: "https://meta-objects.de/",
+        href: "https://meta-objects.net/",
     },
 ];
