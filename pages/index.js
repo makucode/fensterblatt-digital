@@ -1,6 +1,6 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import styles from "../styles/pages/Home.module.css";
 import {
@@ -23,7 +23,7 @@ import AboutHeading from "../components/index/AboutHeading";
 import KontaktMail from "../components/index/KontaktMail";
 
 const Home = () => {
-    const [curHero, setCurHero] = useState(Math.floor(Math.random() * 4));
+    const [curHero, setCurHero] = useState();
 
     const renderProjects = () => {
         return projekte.projekte.map((projekt, idx) => (
@@ -34,6 +34,14 @@ const Home = () => {
     const renderFaqs = () => {
         return faq.items.map((item) => <FaqItem key={uuid()} {...item} />);
     };
+
+    useEffect(() => {
+        setCurHero(Math.floor(Math.random() * 4));
+    }, []);
+
+    useEffect(() => {
+        console.log(curHero);
+    }, [curHero]);
 
     return (
         <div className={styles.container}>
@@ -51,7 +59,7 @@ const Home = () => {
             </Head>
             <div className={styles.indexContent}>
                 <section className={styles.indexHero}>
-                    <ImgBoxes cur={curHero} />
+                    {(curHero || curHero === 0) && <ImgBoxes cur={curHero} />}
                     <HeroHeading text={hero.heading} />
                     <p className={styles.headingHeroSub}>{hero.text1}</p>
                     <Link scroll={false} href="/kontakt" passHref>
