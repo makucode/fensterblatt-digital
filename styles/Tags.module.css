@@ -23,12 +23,15 @@
     margin-top: 0.75rem;
 }
 
+@media only screen and (max-width: 1280px), screen and (orientation: portrait) {
+    .Tags {
+        justify-content: center;
+        margin-top: 0.75rem;
+    }
+}
+
 @media only screen and (max-width: 768px), screen and (orientation: portrait) {
     .Tags li {
-        margin-right: 1rem;
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-        border-radius: 50px;
-        margin-top: 0.75rem;
+        font-size: 0.8rem;
     }
 }
