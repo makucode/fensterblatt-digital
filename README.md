@@ -1,4 +1,4 @@
-## Fensterblatt Digital - Webapp built with Next.js
+## Fensterblatt Digital
 
 [fensterblatt.digital](https://fensterblatt.digital/)
 
