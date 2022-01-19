@@ -1,10 +1,10 @@
-## Fensterblatt Digital
+# Fensterblatt Digital
 
 [fensterblatt.digital](https://fensterblatt.digital/)
 
 **Development by makucode, Design by Yuan Ahn**
 
-Fensterblatt Digital is a web design and development project I'm running with a good friend of mine. We teamed up to create beautiful, modern and user-friendly websites and web apps for local businesses.
+Fensterblatt Digital is a web design and development project I'm running with a good friend of mine. We teamed up to create beautiful, modern and user-friendly web-experiences for small and mediumn sized businesses.
 
 ## Getting Started
 
